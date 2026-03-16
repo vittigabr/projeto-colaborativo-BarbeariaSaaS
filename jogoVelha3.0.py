@@ -56,27 +56,27 @@ while True:
         input('Pressione qualquer tecla para continuar...')
         if cont>=3:
             if velha[0][0]=='X' and velha[1][1]=='X' and velha[2][2]=='X' or velha[2][0]=='X' and velha[1][1]=='X' and velha[0][2]=='X': #diagonais
-                print(f'{velha[linha][coluna]} ganhou')
+                print(f'{velha[linha][coluna]} Venceu!')
                 adicionarPontos()
                 break
             elif velha[0][0]=='X' and velha[1][0]=='X' and velha[2][0]=='X' or velha[0][1]=='X' and velha[1][1]=='X' and velha[2][1]=='X' or velha[0][2]=='X' and velha[1][2]=='X' and velha[2][2]=='X': #verticais
-                print(f'{velha[linha][coluna]} ganhou')
+                print(f'{velha[linha][coluna]} Venceu!')
                 adicionarPontos()
                 break
             elif velha[0][0]=='X' and velha[0][1]=='X' and velha[0][2]=='X' or velha[1][0]=='X' and velha[1][1]=='X' and velha[1][2]=='X' or velha[2][0]=='X' and velha[2][1]=='X' and velha[2][2]=='X': #horizontais
-                print(f'{velha[linha][coluna]} ganhou')
+                print(f'{velha[linha][coluna]} Venceu!')
                 adicionarPontos()
                 break
             elif velha[0][0]=='O' and velha[1][1]=='O' and velha[2][2]=='O' or velha[2][0]=='O' and velha[1][1]=='O' and velha[0][2]=='O': #diagonais
-                print(f'{velha[linha][coluna]} ganhou')
+                print(f'{velha[linha][coluna]} Venceu!')
                 adicionarPontos()
                 break
             elif velha[0][0]=='O' and velha[1][0]=='O' and velha[2][0]=='O' or velha[0][1]=='O' and velha[1][1]=='O' and velha[2][1]=='O' or velha[0][2]=='O' and velha[1][2]=='O' and velha[2][2]=='O': #verticais
-                print(f'{velha[linha][coluna]} ganhou')
+                print(f'{velha[linha][coluna]} Venceu!')
                 adicionarPontos()
                 break
             elif velha[0][0]=='O' and velha[0][1]=='O' and velha[0][2]=='O' or velha[1][0]=='O' and velha[1][1]=='O' and velha[1][2]=='O' or velha[2][0]=='O' and velha[2][1]=='O' and velha[2][2]=='O': #horizontais
-                print(f'{velha[linha][coluna]} ganhou')
+                print(f'{velha[linha][coluna]} Venceu!')
                 adicionarPontos()
                 break
             else:
@@ -85,7 +85,7 @@ while True:
         limpaTela()
         exibirTabuleiro()
         
-    resposta = input('Deseja jogar mais uma partida? [S/N]: ').upper().strip()
+    resposta = input('Deseja jogar mais uma rodada? [S/N]: ').upper().strip()
     if resposta in 'N':
         print('Encerrando...')
         break
