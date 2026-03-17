@@ -80,12 +80,12 @@ while True:
                 adicionarPontos()
                 break
             else:
-                print('Deu empate')
+                print('Deu empate!')
         cont+=1
         limpaTela()
         exibirTabuleiro()
         
-    resposta = input(' Você Deseja jogar mais uma rodada? [S/N]: ').upper().strip()
+    resposta = input('Você Deseja jogar mais uma rodada? [S/N]: ').upper().strip()
     if resposta in 'N':
         print('Encerrando...')
         break
