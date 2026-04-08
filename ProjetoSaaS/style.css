@@ -25,7 +25,17 @@ header {
     font-size: 25px;
 }
 
-.logo {
+.h4ent {
+    color: #D9D9D9;
+    display: block;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #000;
+}
+
+.logo { 
     width: 70px;
     border-radius: 40px;
     margin-left: 2%;
@@ -101,4 +111,61 @@ footer {
     flex-direction: column-reverse;
     align-items: left;
     color: #D9D9D9;
+}
+
+/*tela login*/
+.body-login {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #000 55%, #616161 100%); 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #696969;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 200px;
+    margin-right: 800px;
+
+}
+
+.indent {
+    display: inline-block;
+}
+
+.h1-login {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.paragrafo-login {
+    font-size: 19px;
+    color: #696969;
+
+}
+
+.main-login {
+    text-align: center;
+    border: white solid 12px;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: -350px;
 }
