@@ -1,12 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-   
+    box-sizing: border-box;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #000 70%, #616161); 
-    height: 1200px;
+    background: linear-gradient(to bottom, #000 55%, #616161 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -20,7 +28,7 @@ header {
 .HeadCont {
     display: flex;
     align-items: center;
-    margin-left: 55%;
+    margin-left: 70%;
     gap: 100px;
     font-size: 25px;
 }
@@ -121,19 +129,26 @@ footer {
     height: 100vh;
     background-image: linear-gradient(to bottom, #000 55%, #616161 100%); 
     justify-content: center;
-    align-items: center;
+    align-content: center;
     
+}
+
+.Header-login {
+    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    margin-bottom: 90px;
 }
 
 .main-login {
     text-align: center;
     border: #f6f1f0 solid 12px;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: #f6f1f0;
     border-radius: 20px;
-    margin-left: 500px;
-    margin-top: -350px;
+    margin: 200px;
 }
 
 .container-login {
@@ -143,31 +158,15 @@ footer {
     justify-content: center;
 }
 
-.texto {
-    font-size: 40px;
-    line-height: 1.5;
-    color: #a9a7a7;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    margin-top: 200px;
-    margin-right: 800px;
-
-}
-
-.indent {
-    display: inline-block;
-}
-
 .h1-login {
     color: black;
-    font-size: 40px;
+    font-size: 43px;
     font-weight: 550;
     padding-top: 30px;
 }
 
 .paragrafo-login {
-    font-size: 19px;
+    font-size: 20px;
     color: #696969;
     padding-top: 20px;
 }
@@ -178,9 +177,8 @@ input {
     background-color: white;
     border: #D9D9D9 solid 2px;
     border-radius: 40px;
-    width: 300px;
-
-    padding: 12px 20px;   
+    width: 350px;
+    padding: 16px 20px;   
     margin-top: 20px;    
     margin-left: 0px;      
 }
@@ -190,7 +188,8 @@ input {
 }
 
 .esqueci-login {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     padding-top: 16px;
     padding-right: 170px;
 }
