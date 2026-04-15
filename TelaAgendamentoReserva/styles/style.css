@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000 55%, #616161 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    gap: 100px;
+}
