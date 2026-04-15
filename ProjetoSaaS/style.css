@@ -23,19 +23,19 @@ header {
     justify-content: left;
     padding: 10px;
     gap: 100px;
+
 }
 
 .HeadCont {
     display: flex;
     align-items: center;
-    margin-left: 70%;
+    margin-left: 60%;
     gap: 100px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .h4ent {
     color: #D9D9D9;
-    display: block;
     text-decoration: none;
     border: 2px solid #000;
     border-radius: 20px;
@@ -123,32 +123,36 @@ footer {
 
 /*tela login*/
 
-.body-login {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #000 55%, #616161 100%); 
-    justify-content: center;
-    align-content: center;
-    
-}
-
 .Header-login {
     background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
     display: flex;
     justify-content: left;
     padding: 10px;
-    margin-bottom: 90px;
+    gap: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.body-login {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #000 55%, #616161 100%); 
+    justify-content: center;
+    align-content: center;   
 }
 
 .main-login {
     text-align: center;
     border: #f6f1f0 solid 12px;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 520px;
     background-color: #f6f1f0;
     border-radius: 20px;
-    margin: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .container-login {
@@ -234,4 +238,24 @@ input {
     font-size: 18px;
     margin-left: 15px;
     margin-top: 4px;
+}
+
+/*Tela de Cadastro.*/
+
+.main-cadastro {
+    text-align: center;
+    border: #f6f1f0 solid 12px;
+    width: 500px;
+    height: 580px;
+    background-color: #f6f1f0;
+    border-radius: 20px;
+    margin-top: 90px;
+    margin-bottom: auto;
+}
+
+.h1-cadastro {
+    color: black;
+    font-size: 40px;
+    font-weight: 550;
+    padding-top: 30px;
 }
