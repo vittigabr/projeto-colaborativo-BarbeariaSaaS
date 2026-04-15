@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000 55%, #616161 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    gap: 100px;
+
+}
+
+h1 {
+    color: #ff9d00;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: "Cormorant Garamond", sans-serif;
+    
+}
+
+h2 {
+    color: #D9D9D9;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5 {
+    color: #D9D9D9;
+    font-size: 16px;
+    position: relative;
+    left: 14%;
+    top: 40px;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: left;
+    top: 100px;
+    align-items: center;
+}
+
+.HeadCont {
+    display: flex;
+    align-items: center;
+    margin-left: 60%;
+    gap: 100px;
+    font-size: 23px;
+}
+
+.h4ent {
+    color: #D9D9D9;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #000;
+}
+
+.logo { 
+    width: 70px;
+    border-radius: 40px;
+    margin-left: 2%;
+}
+
+.homebarber {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 5%;
+    margin-left: 12%;
+    border-radius: 12px;
+    width: 500px;
+    height: 600px;
+}
+
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 400px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    top: 10px;
+    right: 15%;
+    gap: 40px;
+}
+
+.sobnos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-top: 4%;
+    padding-left: 9%;
+}
+
+.conteudo1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: left;
+    color: #D9D9D9;
+}
+
+/* Tela Horários */
+.telaServico{
+    background: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    width: 350px;
+    height: 150px;
+    margin-left: 200px;
+    margin-top: 50px;
+    align-content: space-between;
+    border-radius: 20px; 
+}
+
+.containerServico{
+    flex-direction: row;
+    display: flex;
+}
