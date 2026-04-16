@@ -50,3 +50,11 @@ header {
 
 }
 
+.botao_dourado{
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: #ff9d00;
+    aspect-ratio: 1 / 1;
+}
+
