@@ -50,11 +50,14 @@ header {
 
 }
 
-.botao_dourado{
-    width: 100%;
-    max-width: 200px;
-    height: 50px;
-    background-color: #ff9d00;
-    aspect-ratio: 1 / 1;
+.botao_dourado {
+    width: 200px;
+    height: 200px;
+    background-color: #ff9d00;             
+    border: none;                                   /* Remove borda padrão */
+    border-radius: 10px;                            /* Bordas arredondadas (opcional) */
+    font-size: 20px;                                /* Aumenta o texto */
+    cursor: pointer;                                /* Muda cursor para mãozinha */
+    box-shadow: 1px 1px 1px, #ff9d0081;            
 }
 
