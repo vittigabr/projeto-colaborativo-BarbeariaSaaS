@@ -5,8 +5,6 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
 }
 
@@ -20,37 +18,67 @@ body {
 header {
     background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
     display: flex;
-    justify-content: left;
+    align-items: center;
     padding: 10px;
 }
 
-.HeadCont {
+.nav-img-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+}
+
+.div-img-profile {
     display: flex;
     align-items: center;
-    margin-left: 60%;
-    gap: 100px;
-    font-size: 23px;
+    margin-left: auto;
+    margin-right: 5%;
+    gap: 30px;
 }
 
-.h4ent {
-    color: #D9D9D9;
-    text-decoration: none;
-    border: 2px solid #000; 
-    border-radius: 20px;
-    padding: 5px;
-    background-color: #000;
-}
-
-.logo { 
+.img-logo {
     width: 70px;
     border-radius: 40px;
     margin-left: 2%;
 }
 
+.div-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+.img-profile {
+    width: 55px;
+}
+
+.h4-profile {
+    color: #D9D9D9;
+    background-color: #000;
+    font-size: 23px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.p-profile {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div-agendamento {
+    display: flex;
+    align-items: center;
+}
+
+
+/*body do site*/
 .homebarber {
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin-top: 5%;
     margin-left: 12%;
     border-radius: 12px;
@@ -68,7 +96,6 @@ header {
 .conteudo {
     display: flex;
     flex-direction: column;
-    align-items: left;
     position: relative;
     top: 10px;
     right: 15%;
@@ -113,3 +140,8 @@ footer {
 .h1-sobnos {
     margin: 30px;
 }
+
+a {
+    text-decoration: none;
+}
+
