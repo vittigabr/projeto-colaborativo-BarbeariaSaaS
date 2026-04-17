@@ -22,6 +22,10 @@ header {
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-img-logo {
     display: flex;
     justify-content: flex-start;
@@ -79,19 +83,50 @@ header {
 section{
     display: flex;
     justify-content: center;
-    padding: 60px 30px ;
-    gap: 30px;
+    margin-top: 80px;
+    padding: 0px 30px;
+    gap: 60px;
 }
 
 main {
     background-color: #D9D9D9;
     display: flex;
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    height: 220px;
     border-radius: 12px;
 }
 
 p {
     font-size: 20px;
-    padding: 10px;
+    padding: 6px;
+    font-family: "Geologica", sans-serif;
+}
+
+.div-main-1, .div-main-2, .div-main-3 {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.paragrafo-main {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.p-main-1, .p-main-2, .p-main-3 {
+    font-weight: 600;
+}
+
+.div-button {
+    display: flex;
+    justify-content: center;
+    padding-left: 8%;
+    margin-top: 12px;
+}
+
+button {
+    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    border: #ff9d00;
+    color: white;
+    padding: 8px 29px;
+    border-radius: 6px;
 }
