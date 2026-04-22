@@ -125,3 +125,41 @@ footer {
 
 /* Tela Escolha Funcionários */
 
+.secao-selecao{
+    display: flex;
+    margin: 40px;
+}
+
+.bloco-selecao{
+    background-color: #D9D9D9;
+    width: 412px;
+    height: 250px;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.img-perfil{
+    width: 80px;
+    height: 80px;
+}
+
+.nome-funcionario{
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.botao-selecionar{
+    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 15px;
+}
