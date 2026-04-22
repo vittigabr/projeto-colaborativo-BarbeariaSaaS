@@ -123,10 +123,11 @@ p {
     margin-top: 12px;
 }
 
-button {
+.botao-agendar{
     background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
     border: #ff9d00;
     color: white;
     padding: 8px 29px;
     border-radius: 6px;
+    font-weight: 400;
 }
