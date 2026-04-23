@@ -75,6 +75,12 @@ footer {
     background-color: #000;
 }
 
+.h4ent:hover{
+    color:#A9A9A9;
+    background-image: #333333;
+    cursor: pointer;
+}
+
 .logo { 
     width: 70px;
     border-radius: 40px;
