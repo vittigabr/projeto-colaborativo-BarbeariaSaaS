@@ -36,8 +36,7 @@ header {
 .head_back{
     display: flex;
     align-items: center;
-    margin-left: 60%;
-    gap: 100px;
+    margin-left: 65%;
     font-size: 23px;
 
 }
@@ -45,7 +44,7 @@ header {
 .div-profile {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 20px;
     gap: 4px;
     text-decoration: none;
     color: #000;

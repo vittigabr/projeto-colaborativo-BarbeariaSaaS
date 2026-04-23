@@ -15,6 +15,7 @@ body {
     background: linear-gradient(to bottom, #000 55%, #616161 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    color: #ffffff;
 }
 
 header {
@@ -122,123 +123,43 @@ footer {
     color: #D9D9D9;
 }
 
-/*tela login*/
+/* Tela Escolha Funcionários */
 
-.Header-login {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+.secao-selecao{
     display: flex;
-    justify-content: left;
-    padding: 10px;
-    gap: 100px;
-    position: fixed;
-    width: 100%;
-    top: 0;
+    margin: 40px;
 }
 
-.body-login {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #000 55%, #616161 100%); 
-    justify-content: center;
-    align-content: center;   
-}
-
-.main-login {
-    text-align: center;
-    border: #f6f1f0 solid 12px;
-    width: 500px;
-    height: 520px;
-    background-color: #f6f1f0;
+.bloco-selecao{
+    background-color: #D9D9D9;
+    width: 412px;
+    height: 250px;
     border-radius: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.container-login {
-    display: flex;
     flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: 20px;
 }
 
-.h1-login {
-    color: black;
-    font-size: 43px;
-    font-weight: 550;
-    padding-top: 30px;
+.img-perfil{
+    width: 80px;
+    height: 80px;
 }
 
-.paragrafo-login {
-    font-size: 20px;
-    color: #696969;
-    padding-top: 20px;
-}
-
-input {
-    font-size: 18px;
-    color: #696969;
-    background-color: white;
-    border: #D9D9D9 solid 2px;
-    border-radius: 40px;
-    width: 350px;
-    padding: 16px 20px;   
-    margin-top: 20px;    
-    margin-left: 0px;      
-}
-
-.cadastro-login {
-    margin-top: 1px;
-}
-
-.esqueci-login {
-    font-size: 16px;
+.nome-funcionario{
+    color: #000000;
+    font-size: 2rem;
     font-weight: 500;
-    padding-top: 16px;
-    padding-right: 170px;
+    padding: 20px;
 }
 
-.continuar-login {
+.botao-selecionar{
     background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    width: 230px;
-    height: 45px;
-    border: #a76905;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
     border-radius: 10px;
-    margin-top: 30px;
-    color: white;
-    font-size: 22px;
+    padding: 15px;
 }
-
-.divider-login {
-    margin: 15px;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.continuar-com-login {
-    border: white solid 2px;
-    border-radius: 15px;
-    width: 340px;
-    margin: 0 auto;
-    background-color: white;
-}
-
-.google-login {
-    display: flex;
-    border-radius: 40px;
-    border: white;
-    background-color: white;
-    width: 45px;
-    padding: 10px;
-    margin-left: 40px;
-}
-
-.continuar-com-google {
-    white-space: nowrap;
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 4px;
-}
-
-
