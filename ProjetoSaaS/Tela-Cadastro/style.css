@@ -210,6 +210,12 @@ input {
     font-size: 22px;
 }
 
+.continuar-login:hover{
+    color: #ff9d00;
+    background-image: linear-gradient(to left, #000, #333333, #000) ;
+    cursor: pointer;
+}
+
 .divider-login {
     margin: 15px;
     font-size: 19px;

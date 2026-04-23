@@ -211,10 +211,9 @@ input {
 }
 
 .continuar-login:hover{
-    border: #a76905 solid 3px;
-    color: #ffffff;
-    background-image: none;
-    background-color: #000;
+    color: #ff9d00;
+    background-image: linear-gradient(to left, #000, #333333, #000) ;
+    cursor: pointer;
 }
 
 .botaoPreto{
