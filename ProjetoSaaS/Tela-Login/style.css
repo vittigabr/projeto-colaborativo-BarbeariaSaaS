@@ -210,6 +210,24 @@ input {
     font-size: 22px;
 }
 
+.continuar-login:hover{
+    border: #a76905 solid 3px;
+    color: #ffffff;
+    background-image: none;
+    background-color: #000;
+}
+
+.botaoPreto{
+    background-color: #000;
+    width: 230px;
+    height: 45px;
+    border: #a76905;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    font-size: 22px;
+}
+
 .divider-login {
     margin: 15px;
     font-size: 19px;
