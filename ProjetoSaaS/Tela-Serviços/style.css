@@ -68,6 +68,12 @@ a {
     padding: 10px;
 }
 
+.h4-profile:hover{
+    color:#A9A9A9;
+    background-image: #333333;
+    cursor: pointer;
+}
+
 .p-profile {
     font-size: 19px;
     font-weight: bold;
@@ -123,7 +129,10 @@ p {
     margin-top: 12px;
 }
 
-button {
+
+.Agendar {
+    color: white;
+    text-decoration: none;
     background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
     border: #ff9d00;
     color: white;
@@ -131,8 +140,10 @@ button {
     border-radius: 6px;
 }
 
-.Agendar {
-    color: white;
-    text-decoration: none;
-}
+.Agendar:hover{
+    color: #ff9d00;
+    background-image: linear-gradient(to left, #000, #333333, #000) ;
+    cursor: pointer;
+} 
+
 

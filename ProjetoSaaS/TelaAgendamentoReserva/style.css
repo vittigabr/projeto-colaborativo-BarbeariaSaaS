@@ -68,6 +68,12 @@ header {
     background-color: #000;
 }
 
+.h4ent:hover{
+    color: #A9A9A9;
+    background-image: #333333;
+    cursor: pointer;
+}
+
 .botao_dourado {
     width: 300px;
     height: 300px;
