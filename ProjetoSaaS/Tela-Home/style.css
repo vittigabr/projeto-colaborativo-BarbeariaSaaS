@@ -103,7 +103,7 @@ h5 {
     line-height: 1.6;
     max-width: 50em;
     font-family: "Geologica", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 footer {
@@ -118,10 +118,30 @@ footer {
 
 .sobnos-h1 {
     font-family: "Cormorant Garamond", sans-serif;
-    font-size: 40px;
+    font-size: 45px;
     padding-right: 100px;
 }
 
 .h1-sobnos {
     margin: 30px;
+}
+
+.sobrenos-espaco {
+    padding-top: 15px;
+}
+
+.par-1 {
+    margin-bottom: 15px;
+}
+
+.par-2 {
+    margin-bottom: 15px;
+}
+
+.par-3 {
+    margin-bottom: 15px;
+}
+
+.rodape {
+    
 }
