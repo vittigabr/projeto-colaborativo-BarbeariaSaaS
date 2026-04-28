@@ -143,5 +143,8 @@ footer {
 }
 
 .rodape {
-    
+    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 30px;
 }
