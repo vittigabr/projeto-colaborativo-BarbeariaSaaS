@@ -90,7 +90,7 @@ header {
     /* Sombra aumenta ao passar o mouse */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     transform: translateY(-11px); /* Pequeno efeito de elevação */
-  }
+}
 
 .titulo{
     color: #D9D9D9;
