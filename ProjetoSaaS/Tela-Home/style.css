@@ -62,8 +62,9 @@ header {
     margin-top: 5%;
     margin-left: 12%;
     border-radius: 12px;
-    width: 500px;
-    height: 600px;
+    width: clamp(250px,30vw, 800px);
+    height: clamp(250px, 30vw, 800px);
+    transition: 2s;
 }
 
 .container {
