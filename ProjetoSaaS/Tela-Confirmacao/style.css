@@ -106,7 +106,7 @@ footer {
     color: #000;
     font-weight: 500;
     justify-content: space-between;
-    margin: 90px;
+    margin: 110px;
     padding: 10px;
     font-family: 'Geologica';
 }
@@ -124,9 +124,11 @@ footer {
 
 .botao{
     text-decoration: none;
+    color: #ffffff;
     padding: 30px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 50px; 
+    border-radius: 10px;
 }
 
 .botao-preto{
@@ -135,6 +137,18 @@ footer {
     padding-right: 70px;
 }
 
+.botao-preto:hover{
+    color:#A9A9A9;
+    background-image: #333333;
+    cursor: pointer;
+}
+
 .botao-dourado{
     background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
+}
+
+.botao-dourado:hover{
+    color: #ff9d00;
+    background-image: linear-gradient(to left, #000, #333333, #000) ;
+    cursor: pointer;
 }
