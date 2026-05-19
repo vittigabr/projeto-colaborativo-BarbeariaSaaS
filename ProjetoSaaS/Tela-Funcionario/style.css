@@ -133,7 +133,7 @@ footer {
 
 .secao-selecao{
     display: flex;
-    margin: auto;
+    justify-content: center;
 }
 
 .bloco-selecao{
