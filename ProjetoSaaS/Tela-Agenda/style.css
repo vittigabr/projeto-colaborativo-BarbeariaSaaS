@@ -131,7 +131,7 @@ header {
 }
 
 .cancelar:hover{
-    color: #ff9d00;
+    color: #ffffff;
     background-image: linear-gradient(to left, #000, #333333, #000) ;
     cursor: pointer;
 }
