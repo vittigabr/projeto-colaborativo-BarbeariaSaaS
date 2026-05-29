@@ -3,69 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC BARBER</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="shortcut icon" href="../imagens/logos/icon-barber.png" type="image/x-icon">
-    <title>Login Feito</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
     </style>
 </head>
+
 <body>
+
     <header>
-        <nav class="nav-img-logo">
-            <img class="img-logo" src="../imagens/logos/ChatGPT Image 2 de abr. de 2026, 13_29_20 2@2x.png" alt="Logo">
-        </nav>
-        <div class="div-img-profile">
-            <div class="div-agendamento">
-                <a href="../TelaAgendamentoReserva/index.html"><h4 class="h4-profile">Agendamentos</h4></a>
-            </div>
-            <div class="div-profile">
-                <a class="div-profile" href="../Tela-Home/home.html">
-                    <img class="img-profile" src="../imagens/logos/Profile.png" alt="Profile">
-                    <p class="p-profile">User123</p>
-                </a>
-            </div>
+
+        <img class="logo" src="../imagens/logos/ChatGPT Image 2 de abr. de 2026, 13_29_20 2@2x.png" alt="logo">
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato">Contato</a>
         </div>
+        
+        <div class="HeadCont">
+            <img src="../imagens/logos/icons8-usuário-24.png" alt="">
+            <div class="usuario">
+                <p class="nome">Bancada 8 TCC</p>
+                <p class="email-nome">bancada8tcc@gmail.com</p>
+            </div>
+            
+        </div>
+
     </header>
 
-    <main class="main-home">
-        <div class="container">
-            <img class="homebarber" src="../imagens/logos/home-imagem.png" alt="homebarber">
+    <main>
+
+        <section class="hero">
 
             <div class="conteudo">
-                <h1>Estilo e Elegância para <br> o Homem Moderno</h1>
-                <h2>Mais do que um corte de <br> cabelo, uma experiência <br> premium de cuidado <br> masculino com profissionais <br> especializados</h2> 
+
+                <h1>
+                    <span>Estilo e Elegância</span>
+                    para o Homem Moderno
+                </h1>
+
+                <div class="traco"></div>
+
+                <h2>
+                    Mais do que um corte de cabelo,
+                    uma experiência premium de cuidado
+                    masculino com profissionais especializados.
+                </h2>
+
+                <button class="btn">
+                    <a href="../Tela-Login/login.html"><p>Começar agora</p></a>
+                    <img src="../imagens/icons8-seta-longa-à-direita-25.png" alt="">
+                </button>
+
+                <div class="beneficios">
+
+                    <div class="b01">
+                        <img src="../imagens/logos/icons8-calendário-30 (1).png" alt="">
+                        <div class="divisor">
+                            <p class="subtitulo">Agendamento online</p>
+                            <p>Mais agilidade para você e seus clientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="b02">
+                        <img src="../imagens/logos/perfil-de-usuario.png" alt="">
+                        <div class="divisor">
+                            <p class="subtitulo">Gestão de clientes</p>
+                            <p>Histórico completo e atendimento premium.</p>
+                        </div>
+                    </div>
+
+                    <div class="b03">
+                        <img src="../imagens/logos/icons8-classificação-30 (1).png" alt="">
+                        <div class="divisor">
+                            <p class="subtitulo">Controle financeiro</p>
+                            <p>Relatórios e métricas em tempo real.</p>
+                        </div>
+                    </div>
+
+                    <div class="b04">
+                        <img src="../imagens/logos/icons8-sino-24.png" alt="">
+                        <div class="divisor">
+                            <p class="subtitulo">Lembretes automáticos</p>
+                            <p>Reduza faltas e aumente sua agenda.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <main class="main-2" id="recursos">
+
+        <div class="titulo">
+            <p class="paragra">RECURSOS</p>
+            <h1>Tudo que você precisa para <span>sua barbearia.</span></h1>
+            <p class="titulo-paragrafo">Ferramentas simples para facilitar a gestão do seu negócio
+            e encantar seus clientes</p>
+        </div>
+
+        <div class="recursos-beneficios">
+
+            <div class="recurso-1">
+                <img src="../imagens/logos/icons8-calendário-30 (1).png" alt="">
+                <h4>Agendamentos online</h4>
+                <p>Seus clientes agendam horários de forma rápida e 
+                prática, 24h por dia.</p>
+            </div>
+
+            <div class="recurso-2">
+                <img src="../imagens/logos/perfil-de-usuario.png" alt="">
+                <h4>Gestão de clientes</h4>
+                <p>Tenha o histórico completo de cada cliente e ofereça 
+                um atendimento único.</p>
+            </div>
+
+            <div class="recurso-3">
+                <img src="../imagens/logos/icons8-classificação-30 (1).png" alt="">
+                <h4>Controle financeiro</h4>
+                <p>Acompanhe entradas, saídas e lucros com relatórios
+                simples.</p>
+            </div>
+
+            <div class="recurso-4">
+                <img src="../imagens/logos/icons8-sino-24.png" alt="">
+                <h4>Lembretes automáticos</h4>
+                <p>Reduza faltas e aumente sua produtividade com 
+                lembretes automáticos.</p>
+            </div>
+
+            
+        </div>
+        <div class="comecar-agora">
+            <img src="../imagens/logos/icons8-tesoura-30.png" alt="">
+            <div class="conteudo-comecar">
+                <p class="p1">Mais tempo para oque importa</p>
+                <div class="link">
+                    <p class="p2">Nós cuidamos de sua gestão para você focar
+                    no que faz de melhor.</p>
+                    <a href="../Tela-Login/login.html">Começar agora</a>
+                </div>
             </div>
         </div>
+
+    </main>
+
+    <main class="main-3" id="planos">
+
+        <div class="planos">
+
+            <div class="titulo">
+                <p class="paragra">PLANOS</p>
+                <h1>Escolha o plano ideal para <span>sua barbearia.</span></h1>
+                <p class="p2">Planos simples e acessíveis para barbearias
+                de todos os tamanhos.</p>
+            </div>
+
+            <div class="opcoes-planos">
+
+                <div class="basico">
+                    
+                    <div class="titulo-basico">
+                        <h2>Básico</h2>
+                        <p>Ideal para barbearias que estão começando.</p>
+
+                        <div class="separador"></div>
+
+                        <div class="valor">
+                            <p>R$ <strong>49</strong> /mês</p>
+                            <ul>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Agendamento online</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Gestão de clientes</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Lembretes automáticos</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Relatórios básicos</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="botao-plano">
+                            <a href="#">Escolher plano</a>
+                        </div>
+
+                    </div>
+    
+                </div>
+
+                <div class="profissional">
+                    
+                    <div class="titulo-profissional">
+                        <div class="mais">
+                            <p>MAIS ESCOLHIDO</p>
+                        </div>
+                        <h2>Profissional</h2>
+                        <p>Mais recursos para barbearias que querem crescer.</p>
+
+                        <div class="separador"></div>
+
+                        <div class="valor">
+                            <p>R$ <strong>99</strong> /mês</p>
+                            <ul>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Tudo do plano Básico</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Controle Financeiro</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Relatórios avançados</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Suporte prioritário</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="botao-plano">
+                            <a href="#">Escolher plano</a>
+                        </div>
+
+                </div>
+                
+            </div>
+
+            <div class="avancado">
+                    
+                    <div class="titulo-avancado">
+                        <h2>Premium</h2>
+                        <p>O plano completo para barbearias que querem o melhor.</p>
+
+                        <div class="separador"></div>
+
+                        <div class="valor">
+                            <p>R$ <strong>149</strong> /mês</p>
+                            <ul>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Tudo do plano profissional</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Multiusuários</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Integração com Whatsapp</li>
+                                </div>
+                                <div class="linha">
+                                    <img src="../imagens/logos/icons8-certo-24.png" alt=""><li>Suporte exclusivo</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="botao-plano">
+                            <a href="#">Escolher plano</a>
+                        </div>
+
+                    </div>
+    
+            </div>
+
+        </div>
+
+    </main>
+
+    <main class="main-contato" id="contato">
+
+        <div class="contato">
+            <p>CONTATO</p>
+            <h1>Fale <span>conosco</span></h1>
+            <p class="prontos">Estamos prontos pra te atender.</p>
+            <p class="prontos-1">Escolha o melhor jeito para entrar em contato.</p>
+        </div>
+
+        <div class="aonde-encontrar">
+            <div class="endereco">
+                <img src="../imagens/logos/icons8-marcador-30.png" alt="">
+                <p class="endereco-titulo">Endereço</p>
+                <p> Rua Joaquim André, 326 - Paulista, Piracicaba - SP</p>
+            </div>
+
+            <div class="telefone">
+                <img src="../imagens/logos/icons8-phone-30.png" alt="">
+                <p class="telefone-titulo">Telefone</p>
+                <p>(19) 99999-9999</p>
+            </div>  
+
+            <div class="email">
+                <img src="../imagens/logos/icons8-nova-mensagem-30.png" alt="">
+                <p class="email-titulo">E-mail</p>
+                <p>contato@gmail.com</p>
+            </div>
+
+            <div class="horario">
+                <img src="../imagens/logos/icons8-clock-30.png" alt="">
+                <p class="horario-titulo">Horário de Atendimento</p>
+                <p>Segunda á Sexta: 9h as 18h 
+                Sábado: 9h as 13h</p>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <div class="sobnos">
-            <div class="h1-sobnos">
-                <h1 class="sobnos-h1">Sobre Nós</h1>
-            </div>
-            
-            <div class="sobrenos-espaco">
-                <h5>
-                    <div
-                    class="par-1">
-                        Com certeza! Expandir o texto permite criar uma conexão emocional mais forte com o cliente e reforçar o profissionalismo da sua barbearia. Aqui está uma versão mais robusta e envolvente:
-                        A Barber nasceu do desejo de resgatar a verdadeira essência do cuidado masculino, transformando o que antes era apenas uma rotina em uma experiência de alto padrão. Somos mais do que um simples espaço de corte e barba; somos um refúgio planejado para o homem moderno que entende que sua imagem é sua assinatura. Nossa filosofia fundamenta-se no equilíbrio perfeito entre a nostalgia das barbearias clássicas e a sofisticação das barbearias contemporâneas, criando um ambiente onde a tradição da navalha encontra as técnicas mais inovadoras do mercado.
-                    </div>
-                    <div class="par-2">
-                        Acreditamos que cada cliente que se senta em nossa cadeira traz consigo uma história única, e nosso papel é traduzir essa personalidade através de um serviço impecável. Por isso, não abrimos mão de rituais que prezam pelo conforto, como o uso de toalhas quentes e produtos de linha premium, garantindo que o seu momento conosco seja o ponto alto do seu dia. Aqui, a precisão técnica caminha lado a lado com a hospitalidade: oferecemos um ambiente descontraído, com música selecionada e um atendimento personalizado que entende as suas necessidades antes mesmo do primeiro corte.
-                    </div>
-                    <div class="par-3">
-                        Nossa missão é elevar a sua autoestima e fortalecer a sua confiança, entregando resultados que vão muito além do espelho. Estamos em constante evolução, acompanhando as tendências globais do visagismo e do estilo masculino para garantir que você esteja sempre à frente. Seja para um alinhamento clássico, um degradê moderno ou o cuidado completo com a barba, a [Nome da Sua Barbearia] está pronta para oferecer não apenas um serviço, mas um novo padrão de excelência. Sente-se, relaxe e permita-se vivenciar o melhor do cuidado masculino.
-                    </div>
-                </h5>
-            </div>    
-        </div>
+        <p>&copy; Desenvolvido pela Bancada 8 - TCC</p>
     </footer>
 
-    <footer class="rodape">
-        <p> &copy; Desenvolvido pela Bancada 8 - TCC</p>
-    </footer>
 </body>
 </html>
