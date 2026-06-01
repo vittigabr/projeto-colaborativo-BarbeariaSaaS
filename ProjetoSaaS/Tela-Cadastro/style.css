@@ -18,18 +18,19 @@ header {
 }
 
 header img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 main {
     border: 1px solid #9897973e;
     width: 440px;
-    height: 500px;
+    height: 740px;
     background-color: #111111;
     margin: 0 auto;
     justify-content: center;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .bemvindo h1 {
@@ -48,7 +49,7 @@ main {
 
 .bemvindo p {
     color: #989797;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-align: center;
@@ -64,7 +65,15 @@ main {
     height: 17px;
     position: relative;
     left: 54px;
-    top: 25px;
+    top: 24px;
+}
+
+.formulario .telfone-img {
+    width: 18px;
+    height: 20px;
+    position: relative;
+    left: 54px;
+    top: 24px;
 }
 
 .senha {
@@ -75,7 +84,7 @@ main {
     width: 22px;
     height: 22px;
     position: relative;
-    left: 50px;
+    left: 51px;
     top: 20px;
 }
 
@@ -105,35 +114,44 @@ main {
     color: rgb(229, 229, 229);
 }
 
-.esqueci-senha {
+.confirmar-termos {
+    display: flex;
+    align-items: center;
+    padding: 10px 42px;
+}
+
+.confirmar-termos input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.confirmar-termos p {
     color: #989797;
-    font-size: 12px;
+    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    text-align: right;
-    margin-right: 40px;
-    margin-top: 2px;
 }
 
-.esqueci-senha a {
+.confirmar-termos strong {
     color: #ff9d00;
-    text-decoration: none;
 }
 
-.esqueci-senha a:hover {
+.confirmar-termos strong:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .botao-entrar {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .botao-entrar a {
     border: 1px solid #ff9d00;
-    padding: 15px 165px;
+    padding: 15px 145px;
     border-radius: 5px;
     color: #ff9d00;
     background-color: transparent;
@@ -153,24 +171,51 @@ main {
     color: #989797;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .google {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    border: 1px solid #313131;
+    margin: 20px auto;
+    width: 80%;
+    padding: 12px 0;
+    border-radius: 5px;
+}
+
+.google:hover {
+    background-color: #313131;
+    cursor: pointer;
 }
 
 .google img {
     width: 20px;
     position: relative;
     margin-right: 12px;
-    bottom: 2px;
 }
 
 .google p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.entrar {
+    text-align: center;
+    color: #989797;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.entrar a {
+    color: #ff9d00;
+    text-decoration: none;
+}
+
+.entrar a:hover {
+    text-decoration: underline;
 }

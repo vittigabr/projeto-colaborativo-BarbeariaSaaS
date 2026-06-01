@@ -18,14 +18,14 @@ header {
 }
 
 header img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 main {
     border: 1px solid #9897973e;
     width: 440px;
-    height: 500px;
+    height: 530px;
     background-color: #111111;
     margin: 0 auto;
     justify-content: center;
@@ -160,17 +160,46 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    border: 1px solid #313131;
+    margin: 30px auto;
+    width: 80%;
+    padding: 12px 0;
+    border-radius: 5px;
+}
+
+.google:hover {
+    background-color: #313131;
+    cursor: pointer;
 }
 
 .google img {
     width: 20px;
     position: relative;
     margin-right: 12px;
-    bottom: 2px;
 }
 
 .google p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.cadastre-se {
+    text-align: center;
+    color: #989797;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cadastre-se a {
+    color: #ff9d00;
+    text-decoration: none;
+}
+
+.cadastre-se a:hover {
+    text-decoration: underline;
 }

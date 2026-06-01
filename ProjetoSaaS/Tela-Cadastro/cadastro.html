@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 <body>
     
@@ -15,13 +15,23 @@
     <main>
 
         <div class="bemvindo">
-            <h1>Bem-vindo <span>de volta!</span></h1>
-            <p>faça login para continuar</p>
+            <h1>Criar <span>conta</span></h1>
+            <p>Preencha os daddos abaixo para se cadastrar</p>
         </div>
 
         <div class="formulario">
             <img src="../imagens/logos/perfil-de-usuario.png" alt="">
-            <input class="input-1" type="email, tel" placeholder="E-mail ou telefone">
+            <input class="input-1" type="email," placeholder="Nome Completo">
+        </div>
+
+        <div class="formulario">
+            <img src="../imagens/logos/icons8-nova-mensagem-30.png" alt="">
+            <input class="input-1" type="email" placeholder="E-mail">
+        </div>
+
+        <div class="formulario">
+            <img class="telfone-img" src="../imagens/logos/icons8-telefone-32.png" alt="">
+            <input class="input-1" type="tel" placeholder="Telefone (opcional)">
         </div>
 
         <div class="senha">
@@ -29,12 +39,18 @@
             <input class="input-2" type="password" placeholder="Senha">
         </div>
 
-        <div class="esqueci-senha">
-            <a href="#">Esqueci minha senha</a>
+        <div class="senha"> 
+            <img src="../imagens/imagens-login/icons8-cadeado-20 (1).png" alt="">
+            <input class="input-2" type="password" placeholder="confirmar senha">
+        </div>
+
+        <div class="confirmar-termos">
+            <input type="checkbox">
+            <p>Li e concordo com os <strong>Termos de uso</strong> e <strong>Política de privacidade.</strong></p>
         </div>
 
         <div class="botao-entrar">
-            <a href="#">Entrar</a>
+            <a href="../Tela-Cadastro-Feito/login-feito.html">Cadastrar</a>
         </div>
 
         <div class="ou"> 
@@ -46,7 +62,11 @@
             <p>Entrar com o Google</p>
         </div>
 
-    </main>
+        <div class="entrar">
+            <p>Já tem uma conta? <a href="../Tela-Login/login.html">Entrar</a></p>
+        </div>
+
+    </main> 
 
 </body>
 </html>
