@@ -4,263 +4,218 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000 55%, #616161 100%);
-    background-attachment: fixed;
+    background-image: url(../imagens/imagens-login/tela-fundo.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
     display: flex;
-    justify-content: left;
-    padding: 10px;
-    gap: 100px;
-
+    padding: 40px 50px;
 }
 
-h1 {
-    color: #ff9d00;
-    font-weight: bold;
-    font-size: 65px;
-    font-family: "Cormorant Garamond", sans-serif;
-    
+header img {
+    width: 80px;
+    height: 80px;
 }
 
-h2 {
-    color: #D9D9D9;
-    font-family: "Manrope", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-h5 {
-    color: #D9D9D9;
-    font-size: 16px;
-    position: relative;
-    left: 14%;
-    top: 40px;
-    padding: 10px;
-}
-
-footer {
-    display: flex;
-    justify-content: left;
-    top: 100px;
-    align-items: center;
-}
-
-.HeadCont {
-    display: flex;
-    align-items: center;
-    margin-left: 60%;
-    gap: 100px;
-    font-size: 23px;
-}
-
-.h4ent {
-    color: #D9D9D9;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 20px;
-    padding: 5px;
-    background-color: #000;
-}
-
-.logo { 
-    width: 70px;
-    border-radius: 40px;
-    margin-left: 2%;
-}
-
-.homebarber {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-top: 5%;
-    margin-left: 12%;
-    border-radius: 12px;
-    width: 500px;
-    height: 600px;
-}
-
-.container {
-    display: flex;
-    align-items: center; 
+main {
+    border: 1px solid #9897973e;
+    width: 440px;
+    height: 740px;
+    background-color: #111111;
+    margin: 0 auto;
     justify-content: center;
-    gap: 400px;
-}
-
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: relative;
-    top: 10px;
-    right: 15%;
-    gap: 40px;
-}
-
-.sobnos {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    padding-top: 4%;
-    padding-left: 9%;
-}
-
-.conteudo1 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: left;
-    color: #D9D9D9;
-}
-
-/*Tela de Cadastro.*/
-
-.Header-login {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    display: flex;
-    justify-content: left;
-    padding: 10px;
-    gap: 100px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.body-login {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #000 55%, #616161 100%); 
-    justify-content: center;
-    align-content: center;   
-}
-
-.main-login {
-    text-align: center;
-    border: #f6f1f0 solid 12px;
-    width: 500px;
-    height: 520px;
-    background-color: #f6f1f0;
-    border-radius: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.container-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.h1-login {
-    color: black;
-    font-size: 43px;
-    font-weight: 550;
-    padding-top: 30px;
-}
-
-.paragrafo-login {
-    font-size: 20px;
-    color: #696969;
-    padding-top: 20px;
-}
-
-input {
-    font-size: 18px;
-    color: #696969;
-    background-color: white;
-    border: #D9D9D9 solid 2px;
-    border-radius: 40px;
-    width: 350px;
-    padding: 16px 20px;   
-    margin-top: 20px;    
-    margin-left: 0px;      
-}
-
-.cadastro-login {
-    margin-top: 1px;
-}
-
-.esqueci-login {
-    font-size: 16px;
-    font-weight: 500;
-    padding-top: 16px;
-    padding-right: 170px;
-}
-
-.continuar-login {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    width: 230px;
-    height: 45px;
-    border: #a76905;
     border-radius: 10px;
-    margin-top: 30px;
-    color: white;
-    font-size: 22px;
+    margin-bottom: 30px;
 }
 
-.continuar-login:hover{
+.bemvindo h1 {
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bemvindo span {
     color: #ff9d00;
-    background-image: linear-gradient(to left, #000, #333333, #000) ;
+}
+
+.bemvindo p {
+    color: #989797;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: flex;
+}
+
+.formulario img {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    left: 54px;
+    top: 24px;
+}
+
+.formulario .telfone-img {
+    width: 18px;
+    height: 20px;
+    position: relative;
+    left: 54px;
+    top: 24px;
+}
+
+.senha {
+    display: flex;
+}
+
+.senha img {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    left: 51px;
+    top: 20px;
+}
+
+.input-1 {
+    display: block;
+    font-size: 14px;
+    width: 85%;
+    height: 50px;
+    margin: 8px 15px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid #98979732;
+    background-color: #171717;
+    color: rgb(229, 229, 229);
+}
+
+.input-2 {
+    display: block;
+    font-size: 14px;
+    width: 85%;
+    height: 50px;
+    margin: 8px 10px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid #98979732;
+    background-color: #171717;
+    color: rgb(229, 229, 229);
+}
+
+.confirmar-termos {
+    display: flex;
+    align-items: center;
+    padding: 10px 42px;
+}
+
+.confirmar-termos input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.confirmar-termos p {
+    color: #989797;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.confirmar-termos strong {
+    color: #ff9d00;
+}
+
+.confirmar-termos strong:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
 
-.divider-login {
-    margin: 15px;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.continuar-com-login {
-    border: white solid 2px;
-    border-radius: 15px;
-    width: 340px;
-    margin: 0 auto;
-    background-color: white;
-}
-
-.google-login {
+.botao-entrar {
     display: flex;
-    border-radius: 40px;
-    border: white;
-    background-color: white;
-    width: 45px;
-    padding: 10px;
-    margin-left: 40px;
-}
-
-.continuar-com-google {
-    white-space: nowrap;
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 4px;
-}
-
-.main-cadastro {
     text-align: center;
-    border: #f6f1f0 solid 12px;
-    width: 500px;
-    height: 580px;
-    background-color: #f6f1f0;
-    border-radius: 20px;
-    margin-top: 90px;
-    margin-bottom: auto;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.h1-cadastro {
-    color: black;
-    font-size: 40px;
-    font-weight: 550;
-    padding-top: 30px;
+.botao-entrar a {
+    border: 1px solid #ff9d00;
+    padding: 15px 145px;
+    border-radius: 5px;
+    color: #ff9d00;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.botao-entrar a:hover {
+    background-color: #ff9d00;
+    color: #111111;
+}
+
+.ou {
+    text-align: center;
+    color: #989797;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #313131;
+    margin: 20px auto;
+    width: 80%;
+    padding: 12px 0;
+    border-radius: 5px;
+}
+
+.google:hover {
+    background-color: #313131;
+    cursor: pointer;
+}
+
+.google img {
+    width: 20px;
+    position: relative;
+    margin-right: 12px;
+}
+
+.google p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.entrar {
+    text-align: center;
+    color: #989797;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.entrar a {
+    color: #ff9d00;
+    text-decoration: none;
+}
+
+.entrar a:hover {
+    text-decoration: underline;
 }
