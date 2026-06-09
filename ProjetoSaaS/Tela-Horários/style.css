@@ -149,12 +149,14 @@ footer {
     margin-right: 80px;
 }
 
-.linha_horario{
+/* .linha_horario{
     width: 90%;
     margin-left: 5%;
-}
+} */
 
 .anterior_proximo{
+    width: 90%;
+    margin-left: 5%;
     color: #ffffff;
     flex-direction: row;
     display: flex;
@@ -198,4 +200,10 @@ li a{
 
 li a:hover{
     background-color: #282828;
+}
+
+ /* Carrossel */
+.carrossel{
+    display: flex;
+    width: 800%;
 }
