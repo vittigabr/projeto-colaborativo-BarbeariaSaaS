@@ -149,7 +149,7 @@ h5{
     font-weight:400;
 }
 
-.btn{
+.bnt{
     display: flex;
     width:fit-content;
     padding:14px 30px;
@@ -162,34 +162,34 @@ h5{
     cursor:pointer;
     transition:0.3s;
     text-align: center;
+    text-decoration: none;
 }
-.btn p {
+
+.bnt p {
     position: relative;
     top: 6px;
     right: 8px;
 }
 
-.btn img {
+.bnt img {
     position: relative;
     top: 3px;
     left: 4px;
 }
 
-.btn:hover{
+.bnt:hover{
     transform:translateY(-3px);
     background:#ffb733;
 }
 
-.btn a {
+.bnt a {
     text-decoration: none;
     color: black;
 }
 
 .beneficios {
-    padding: 0px 70px;
     display: flex;
-    margin-top: 30px;
-    gap: 60px;  
+    width: 100%;
 }
 
 .b01 {
