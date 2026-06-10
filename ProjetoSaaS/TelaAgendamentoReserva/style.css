@@ -9,10 +9,13 @@
 html, body {
     width: 100%;
     min-height: 100vh;
+    height: 100%;
     overflow-x: hidden;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-image: url(../imagens/imagens-login/imagem-fundo-escura.png);
     width: 100%;
@@ -23,6 +26,9 @@ body {
     overflow: hidden;
 }
 
+main{
+    flex: 1;
+}
 
 header{
     width:100%;
