@@ -496,7 +496,7 @@ h5{
 .basico:hover {
     border: 1px solid #ff9d00;
     transition: 0.3s;
-    transform:translateY(-5px);
+    transform:translateY(-7px);
 }
 
 .titulo-basico h2 {
@@ -574,7 +574,7 @@ strong {
 /* Plano profissional */
 
 .profissional {
-    border: 1px solid #4f4e4e;
+    border: 1px solid #ff9d00;
     background-color: rgb(31, 30, 30);
     padding: 2px 35px;
     border-radius: 10px;
@@ -633,7 +633,7 @@ strong {
 .avancado:hover {
     border: 1px solid #ff9d00;
     transition: 0.3s;
-    transform:translateY(-5px);
+    transform:translateY(-7px);
 }
 
 .titulo-avancado h2 {
