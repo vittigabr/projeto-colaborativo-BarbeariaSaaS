@@ -17,6 +17,7 @@ header {
     padding: 10px;
 }
 
+<<<<<<< Updated upstream
 .nav-img-logo {
     display: flex;
     justify-content: flex-start;
@@ -33,6 +34,10 @@ header {
 
 .img-logo {
     width: 70px;
+=======
+.logo {
+    width: 70px;    
+>>>>>>> Stashed changes
     margin-left: 2%;
 }
 
