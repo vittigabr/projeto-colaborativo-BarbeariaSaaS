@@ -10,82 +10,178 @@ body {
     background: linear-gradient(to bottom, #000000 45%, #5f5f5f 100%);
 }
 
-header {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    display: flex;
-    align-items: center;
-    padding: 10px;
+header{
+    width:100%;
+    padding:10px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgb(0, 0, 0);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+    z-index:1000;
 }
 
-<<<<<<< Updated upstream
-.nav-img-logo {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 2%;
+.logo{
+    width:80px;
+    border-radius:50%;
 }
 
-.div-img-profile {
+.botao-voltar {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 5%;
-    gap: 30px;
-}
-
-.img-logo {
-    width: 70px;
-=======
-.logo {
-    width: 70px;    
->>>>>>> Stashed changes
-    margin-left: 2%;
-}
-
-.div-profile {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    gap: 4px;
-    text-decoration: none;
-    color: #000;
-}
-
-.img-profile {
-    width: 55px;
-}
-
-.h4-profile {
-    color: #D9D9D9;
-    background-color: #000;
-    font-size: 23px;
-    border: 2px solid #000;
+    margin-right: 60px;
+    border: 1px solid transparent;
+    padding: 1px 14px 16px 16px;
     border-radius: 12px;
-    padding: 10px;
+    transition: 0.2s;
 }
 
-.h4-profile:hover{
-    color:#A9A9A9;
-    background-image: #333333;
-    cursor: pointer;
+.botao-voltar:hover {
+    border: 1px solid #3a3a3a;
+    background-color: #3a3a3a;
 }
 
-
-.p-profile {
-    font-size: 20px;
-    font-weight: bold;
+.botao-voltar img {
+    position: relative;
+    right: 2px;
+    top: 5px;
+    width: 24px;
 }
 
-.div-agendamento {
+.botao-voltar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    top: 6px;
+}
+
+.HeadCont{
     display: flex;
     align-items: center;
-    text-decoration: none;
+    gap: 20px;
+    position: relative;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+    outline: none;
 }
+
+.HeadCont:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.HeadCont img{
+    width: 30px;
+    height: 30px;
+}
+
+.HeadCont .nome {
+    color: white;
+    font-size: 15px;
+    font-family: "Instrument Sans",sans-serif;
+}
+
+.HeadCont .email-nome {
+    color: #989797;
+    font-size: 13px;
+    font-family: "Instrument Sans",sans-serif;
+}
+
+/* Dropdown perfil */
+.dropdown-perfil {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: #1f1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    min-width: 210px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.HeadCont:focus .dropdown-perfil,
+.HeadCont:focus-within .dropdown-perfil {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.drop-nome {
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+.drop-email {
+    color: #989797 !important;
+    font-size: 12px !important;
+    margin-top: 2px !important;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+    transition: 0.2s;
+}
+
+.dropdown-item img {
+    width: 18px;
+    height: 18px;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+}
+
+.dropdown-item.sair {
+    color: #ffffff;
+}
+
+.dropdown-item.sair:hover {
+    background: rgba(240, 100, 100, 0.08);
+    color: #ff8a8a;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #3a3a3a;
+    margin: 2px 0;
+}
+
+.nome {
+    position: relative;
+    top: 1px;
+}
+
+.email-nome {
+    position: relative;
+    bottom: -4px;
+}
+
 
 
 .conteudo {
     width: 1120px;
     max-width: 90%;
-    margin: 70px auto 0 auto;
+    margin: 150px auto 0 auto;
 }
 
 .cartao {
