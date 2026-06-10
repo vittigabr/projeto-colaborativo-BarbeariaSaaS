@@ -1,5 +1,15 @@
+html, body{
+    height: 100%;
+}
+
 body{
+    flex-direction: column;
+    display: flex;
     background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 1));
+}
+
+main{
+    flex: 1;
 }
 
 /* Tela Horários */
