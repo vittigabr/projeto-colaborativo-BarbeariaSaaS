@@ -1,201 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000 55%, #616161 100%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #ffffff;
-}
-
-header {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    display: flex;
-    justify-content: left;
-    padding: 10px;
-    gap: 100px;
-
-}
-
-h1 {
-    color: #ff9d00;
-    font-weight: bold;
-    font-size: 65px;
-    font-family: "Cormorant Garamond", sans-serif;
-    
-}
-
-h2 {
-    color: #D9D9D9;
-    font-family: "Manrope", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-h5 {
-    color: #D9D9D9;
-    font-size: 16px;
-    position: relative;
-    left: 14%;
-    top: 40px;
-    padding: 10px;
-}
-
-footer {
-    display: flex;
-    justify-content: left;
-    top: 100px;
-    align-items: center;
-}
-
-.HeadCont {
-    display: flex;
-    align-items: center;
-    margin-left: 60%;
-    gap: 100px;
-    font-size: 23px;
-}
-
-.h4ent {
-    color: #D9D9D9;
-    font-family: "Geologica", sans-serif;
-    font-weight: 100px;
-    text-decoration: none;
-    border-radius: 30px;
-    padding: 15px;
-    background-color: #000;
-}
-
-.h4ent:hover{
-    color:#A9A9A9;
-    background-image: #333333;
-    cursor: pointer;
-}
-
-.logo { 
-    width: 70px;
-    border-radius: 40px;
-    margin-left: 2%;
-}
-
-.homebarber {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-top: 5%;
-    margin-left: 12%;
-    border-radius: 12px;
-    width: 500px;
-    height: 600px;
-}
-
-.container {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    gap: 400px;
-}
-
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: relative;
-    top: 10px;
-    right: 15%;
-    gap: 40px;
-}
-
-.sobnos {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    padding-top: 4%;
-    padding-left: 9%;
-}
-
-.conteudo1 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: left;
-    color: #D9D9D9;
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 1));
 }
 
 /* Tela Horários */
 .telaServico{
-    background: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    width: 350px;
-    height: 150px;
-    margin-left: 200px;
-    margin-top: 50px;
-    align-content: space-between;
-    border-radius: 20px; 
-    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: #0c0c0c;
+    border: 1px solid #ff9d00;
+    width: 500px;
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 10px;
+    align-content: center;
+    justify-items: center;
 }
 
 .containerServico{
-    flex-direction: row;
     display: flex;
+    width: 400px;
     justify-content: space-between;
-    margin-right: 80px;
-}
-
-.linha_horario{
-    width: 90%;
-    margin-left: 5%;
-}
-
-.anterior_proximo{
-    color: #ffffff;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-}
-
-.img_arrow{
-    width: 50px;
-    height: 50px;
+    margin-bottom: 20px;
 }
 
 .bloco-horario{
-    width: 90%;
-    flex-direction: column;
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 200px;
-    gap: 50px;
+    border-bottom: 2px solid #ff9d00;
 }
 
-ul{
-    flex-direction: row;
+.bloco-horario h2{
+    margin-bottom: 20px;
+}
+
+.bloco-manha, .bloco-tarde, .bloco-noite{
+    margin-left: 50px;
+}
+
+.bloco-manha ul, .bloco-tarde ul, .bloco-noite ul{
     display: flex;
     list-style-type: none;
+    gap: 20px;
+    margin-bottom: 40px;
+    font-size: 15px;
 }
 
-li{
-    margin-top: 20px;
-    margin-right: 40px;
-    font-size: 20px
-}
-
-li a{
+.bloco-horario a, .dia{
     text-decoration: none;
     color: #ffffff;
-    border: 2px solid #ff9d00;
-    border-radius: 15px;
     background-color: #000;
-    padding: 10px;
+    border: 2px solid #ff9d00;
+    border-radius: 10px;
+    padding: 10px;   
+    transition: 0.3s; 
+    cursor: pointer;
 }
 
-li a:hover{
-    background-color: #282828;
+.bloco-horario a:hover{
+    background-color: #838383;
+    color: #000;
+}
+
+/* Carrossel de datas */
+.linha_horario{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-top: 2px solid #ff9d00;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#bntA, #bntP{
+    font-size: 20px;
+    color: #000;
+    background-color: #ff9d00;
+    border: 2px solid #ff9d00;
+    border-radius: 10px;
+    padding: 10px;    
+}
+
+#linkA{
+    position: absolute;
+}
+
+#linkP{
+    display: flex;
+    justify-self: end;
+    position: absolute;
+}
+
+.carrossel{
+    display: flex;
+    width: 800%;
+    margin: auto;
+}
+
+.semana{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.selecionado{
+    color: #000;
+    background-color: #ff9d00;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    font-size: 20px;
+    color: #ff9d00;
+    background-color: #000;
+    border-radius: 20px;
+    border: 2px solid #FFA726;
+    transition: 0.3s;
+}
+
+input:hover{
+    background-color: #ccc;
+    color: #000;
 }
