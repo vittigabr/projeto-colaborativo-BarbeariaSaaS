@@ -23,6 +23,7 @@ body {
     overflow: hidden;
 }
 
+
 header{
     width:100%;
     padding:10px 60px;
@@ -177,6 +178,17 @@ header{
     height: 1px;
     background: #3a3a3a;
     margin: 2px 0;
+}
+
+.nome {
+    position: relative;
+    top: 1px;
+    right: 20px;
+}
+
+.email-nome {
+    position: relative;
+    top: -4px;
 }
 
 main {
