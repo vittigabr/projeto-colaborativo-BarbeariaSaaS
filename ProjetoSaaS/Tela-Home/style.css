@@ -57,13 +57,13 @@ header{
     color:#ff9d00;
 }
 
-.HeadCont{
+.signIn{
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:30px;
 }
 
-.h4ent{
+.opcaoLogin{
     color:white;
     text-decoration:none;
     padding:12px 24px;
@@ -71,11 +71,11 @@ header{
     transition:0.3s;
 }
 
-.h4ent:hover{
+.opcaoLogin:hover{
     border:1px solid white;
 }
 
-.h4ent-borda{
+.opcaoCadastro{
     color:#ff9d00;
     text-decoration:none;
     border:1px solid #ff9d00;
@@ -84,7 +84,7 @@ header{
     transition:0.3s;
 }
 
-.h4ent-borda:hover{
+.opcaoCadastro:hover{
     background:#ff9d00;
     color:black;
 }
@@ -111,6 +111,11 @@ header{
     display:flex;
     flex-direction:column;
     gap:30px;
+}
+
+.tituloHero{
+    border-bottom: 2px solid #ff9d00;
+    border-radius: 10px;
 }
 
 h1{
@@ -192,7 +197,7 @@ h5{
     width: 100%;
 }
 
-.b01 {
+.beneficio-1 {
     display: flex;
 }
 
@@ -200,86 +205,86 @@ h5{
     padding: 5px 20px;
 }
 
-.b01 img {
+.beneficio-1 img {
     width: 38px;
     height: 38px;
     position: relative;
     top: 15px;
 }
 
-.b01 .subtitulo {
+.beneficio-1 .subtitulo {
     color: white;
     width: 100px;
     margin-bottom: 8px;
 }
 
-.b01 p {
+.beneficio-1 p {
     color: #989797;
     width: 150px;
 }
 
-.b02 {
+.beneficio-2 {
     display: flex;
 }
 
-.b02 img {
+.beneficio-2 img {
     width: 35px;
     height: 35px;
     position: relative;
     top: 17px;
 }
 
-.b02 .subtitulo {
+.beneficio-2 .subtitulo {
     color: white;
     width: 100px;
     margin-bottom: 8px;
 }
 
-.b02 p {
+.beneficio-2 p {
     color: #989797;
     width: 190px;
 }
 
-.b03 {
+.beneficio-3 {
     display: flex;
 }
 
-.b03 img {
+.beneficio-3 img {
     width: 45px;
     height: 45px;
     position: relative;
     top: 15px;
 }
 
-.b03 .subtitulo {
+.beneficio-3 .subtitulo {
     color: white;
     width: 100px;
     margin-bottom: 8px;
 }
 
-.b03 p {
+.beneficio-3 p {
     color: #989797;
     width: 170px;
 }
 
-.b04 {
+.beneficio-4 {
     display: flex;
 }
 
-.b04 img {
+.beneficio-4 img {
     width: 45px;
     height: 45px;
     position: relative;
     top: 15px;
 }
 
-.b04 .subtitulo {
+.beneficio-4 .subtitulo {
     color: white;
     width: 100px;
     margin-bottom: 8px;
 }
 
-.b04 p {
+.beneficio-4 p {
     color: #989797;
     width: 190px;
 }

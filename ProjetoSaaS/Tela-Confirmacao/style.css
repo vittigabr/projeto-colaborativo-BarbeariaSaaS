@@ -4,10 +4,9 @@ body{
 
 /* Tela de Confirmação */
 .secao-fundo{
-
     margin: auto;
     background-color: #D9D9D9;
-    height: 497px;
+    height: 550px;
     width: 871px;
     border-radius: 20px;
 }
