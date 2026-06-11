@@ -501,7 +501,7 @@ h5{
 .basico:hover {
     border: 1px solid #ff9d00;
     transition: 0.3s;
-    transform:translateY(-5px);
+    transform:translateY(-7px);
 }
 
 .titulo-basico h2 {
@@ -638,7 +638,7 @@ strong {
 .avancado:hover {
     border: 1px solid #ff9d00;
     transition: 0.3s;
-    transform:translateY(-5px);
+    transform:translateY(-7px);
 }
 
 .titulo-avancado h2 {
