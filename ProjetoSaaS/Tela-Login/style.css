@@ -203,3 +203,25 @@ main {
 .cadastre-se a:hover {
     text-decoration: underline;
 }
+
+.senha {
+    position: relative;
+    width: 415px;
+}
+
+.senha input {
+    width: 100%;
+    padding: 20x;
+    padding-right: 40px;
+}
+
+.senha span {
+    position:absolute;
+    padding: 20px; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #9ca3af;
+    cursor: pointer;
+}
