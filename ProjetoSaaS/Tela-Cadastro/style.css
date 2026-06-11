@@ -143,6 +143,13 @@ main {
     cursor: pointer;
 }
 
+#alerta{
+    color: #ce0c0c;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
 .botao-entrar {
     display: flex;
     text-align: center;

@@ -18,3 +18,14 @@ function autentificacao(){
         entrar.setAttribute('href', '../Tela-Cadastro-Feito/cadastro-feito.html')
     }
 }
+
+// Mostrar Senha e ocultar Senha
+const botao = document.getElementById('mostrar');
+
+botao.addEventListener("click",  () =>{
+    if(senha.type === "password"){
+        senha.type = "text";
+    } else {
+        senha.type = "password"
+    }
+});
