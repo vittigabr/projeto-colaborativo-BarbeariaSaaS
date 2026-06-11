@@ -21,38 +21,42 @@
 
         <div class="formulario">
             <img src="../imagens/logos/perfil-de-usuario.png" alt="">
-            <input class="input-1" type="email," placeholder="Nome Completo">
+            <input class="input-1" id="nome" type="email," placeholder="Nome Completo">
         </div>
 
         <div class="formulario">
             <img src="../imagens/logos/icons8-nova-mensagem-30.png" alt="">
-            <input class="input-1" type="email" placeholder="E-mail">
+            <input class="input-1" id="email" type="email" placeholder="E-mail">
         </div>
 
         <div class="formulario">
             <img class="telfone-img" src="../imagens/logos/icons8-telefone-32.png" alt="">
-            <input class="input-1" type="tel" placeholder="Telefone (opcional)">
+            <input class="input-1" id="telefone" type="tel" placeholder="Telefone (opcional)">
         </div>
 
         <div class="senha">
             <img src="../imagens/imagens-login/icons8-cadeado-20 (1).png" alt="">
-            <input class="input-2" type="password" placeholder="Senha">
+            <input class="input-2" id="senha" type="password" placeholder="Senha">
               <span class="olho">👁</span>
         </div>
 
         <div class="senha"> 
             <img src="../imagens/imagens-login/icons8-cadeado-20 (1).png" alt="">
-            <input class="input-2" type="password" placeholder="confirmar senha">
+            <input class="input-2" id="confirmacaoSenha" type="password" placeholder="confirmar senha">
             <span class="olho">👁</span>
         </div>
 
         <div class="confirmar-termos">
-            <input type="checkbox">
+            <input id="termos" type="checkbox">
             <p>Li e concordo com os <strong>Termos de uso</strong> e <strong>Política de privacidade.</strong></p>
         </div>
 
+        <div id="alerta">
+            
+        </div>
+
         <div class="botao-entrar">
-            <a href="../Tela-Login/login.html">Cadastrar</a>
+            <a id="cadastrar" href="../Tela-Login/login.html">Cadastrar</a>
         </div>
 
         <div class="ou"> 
@@ -69,6 +73,6 @@
         </div>
 
     </main> 
-
+    <script src="script.js"></script>
 </body>
 </html>
