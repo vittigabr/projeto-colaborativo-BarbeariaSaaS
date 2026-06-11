@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="../imagens/logos/icon-barber.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
@@ -21,21 +23,24 @@
 
         <div class="formulario">
             <img src="../imagens/logos/perfil-de-usuario.png" alt="">
-            <input class="input-1" type="email, tel" placeholder="E-mail ou telefone">
+            <input class="input-1" id="email" type="email, tel" placeholder="E-mail ou telefone">
         </div>
 
         <div class="senha">
             <img src="../imagens/imagens-login/icons8-cadeado-20 (1).png" alt="">
-            <input class="input-2" type="password" placeholder="Senha">
-            <span class="olho">👁</span>
+            <input class="input-2" id="senha" type="password" placeholder="Senha">
         </div>
 
         <div class="esqueci-senha">
             <a href="#">Esqueci minha senha</a>
         </div>
 
+        <div id="alerta">
+            
+        </div>
+
         <div class="botao-entrar">
-            <a href="../Tela-Cadastro-Feito/cadastro-feito.html">Entrar</a>
+            <a id="bntEntrar" href="../Tela-Cadastro-Feito/cadastro-feito.html">Entrar</a>
         </div>
 
         <div class="ou"> 
@@ -52,6 +57,6 @@
     <div class="cadastre-se">
         <p>Ainda não tem uma conta? <a href="../Tela-Cadastro/cadastro.html">Cadastre-se</a></p>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
