@@ -5,9 +5,12 @@
 }
 
 body {
-    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #000000 45%, #5f5f5f 100%);
+    background-image: url("../imagens/imgdefundo-telaagenda.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header{
