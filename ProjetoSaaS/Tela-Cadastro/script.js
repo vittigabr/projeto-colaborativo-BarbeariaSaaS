@@ -22,6 +22,20 @@ function autentificacao(){
 // Mostrar Senha e ocultar Senha
 
 const botao = document.getElementById('mostrar')
-const botao2 = document.getElementById('mostrarConfirma')
+const botao2 = document.getElementById('mostrarConfirmar')
 
-botao.addEventListener("click", () =>)
+botao.addEventListener("click", () =>{
+    if(senha.type === "password"){
+        senha.type = "text";
+    } else {
+        senha.type = "password"
+    }
+});
+
+botao2.addEventListener("click", () =>{
+    if(confSenha.type === "password"){
+        confSenha.type = "text";
+    } else {
+        confSenha.type = "password"
+    }
+});
