@@ -18,3 +18,10 @@ function autentificacao(){
         cadastrar.setAttribute('href', '../Tela-Login/login.html')
     }
 }
+
+// Mostrar Senha e ocultar Senha
+
+const botao = document.getElementById('mostrar')
+const botao2 = document.getElementById('mostrarConfirma')
+
+botao.addEventListener("click", () =>)
