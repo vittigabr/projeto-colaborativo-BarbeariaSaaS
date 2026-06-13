@@ -155,4 +155,5 @@ input{
 input:hover{
     background-color: #ccc;
     color: #000;
+    border-color: #ccc;
 }
