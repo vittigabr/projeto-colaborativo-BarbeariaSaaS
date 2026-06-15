@@ -32,6 +32,17 @@ let month = agora.getUTCMonth()
 let mes = meses[month]
 const datas = document.querySelectorAll('.dia')
 
+// Botão selecionado
+datas.forEach((botao, index) => {
+    botao.addEventListener('click', function(){
+        const diaSelecionado = document.querySelector('.dia.selecionado')
+        console.log('amendoim')
+        diaSelecionado.classList.remove('selecionado')
+        botao.classList.add('selecionado')
+    })
+})
+
+// Carrossel de datas
 let d = 0
 let m = 1
 let i = 0
