@@ -15,11 +15,6 @@ header{
     padding-left:60px;
 }
 
-.logo{
-    width:75px;
-    border-radius:50%;
-}
-
 main{
     min-height:calc(100vh - 90px);
     display:flex;
@@ -42,7 +37,7 @@ main{
 }
 
 .secao-fundo{
-    width:850px;
+    width:700px;
     min-height:420px;
     background:#080808;
     border-radius:20px;

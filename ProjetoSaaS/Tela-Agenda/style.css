@@ -6,11 +6,14 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../imagens/imgdefundo-telaagenda.png");
+    background-image: url("../imagens/tela-agenda.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -20,7 +23,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgb(0, 0, 0);
+
     backdrop-filter:blur(10px);
     position:fixed;
     top:0;
@@ -183,42 +186,79 @@ header{
 
 
 .conteudo {
-    width: 1120px;
-    max-width: 90%;
-    margin: 150px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cartao {
     width: 125%;
     height: 125px;
     padding: 0 30px 0 18px;
-    margin-bottom: 55px;
-    background-color: #f3f3f3;
+    margin-bottom: 20px;
+    background-color: #161616;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
+    border: 1px solid #7d5f23;
+}
+
+.cartao-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.cartao-1 .tesoura {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border: 1px solid #b88a2f;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.data {
+    display: flex;
+    gap: 40px;
+}
+
+.data img {
+    width: 20px;
+    height: 20px;
+}
+
+.data-1 {
+    display: flex;
+}
+
+.data-1 img{
+    position: relative;
+    left: -3px;
+    bottom: 1px;
 }
 
 .cartao-cinza {
-    background: linear-gradient(to right, #979797, #b0b0b0);
+    background-color: #9898985f;
 }
 
 .texto-cartao h1 {
-    font-size: 24px;
-    font-weight: normal;
-    color: #111111;
-    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .texto-cartao p {
-    font-size: 22px;
-    color: #111111;
+    font-size: 18px;
+    color: #989797;
     margin-bottom: 4px;
 }
 
 .texto-cinza h1,
 .texto-cinza p {
-    color: #444444;
+    color: #989898;
 }
 
 .botao {
