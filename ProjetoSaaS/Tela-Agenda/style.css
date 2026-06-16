@@ -11,9 +11,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -186,16 +183,18 @@ header{
 
 
 .conteudo {
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 200px;
+    
 }
 
 .cartao {
-    width: 125%;
-    height: 125px;
+    width: 60%;
+    height: 120px;
     padding: 0 30px 0 18px;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 30px;
     background-color: #161616;
     display: flex;
     justify-content: space-between;
