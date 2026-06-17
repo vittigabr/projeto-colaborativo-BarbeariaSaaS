@@ -102,6 +102,21 @@ main {
     color: rgb(229, 229, 229);
 }
 
+.input-3{
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    width: 85%;
+    height: 50px;
+    margin: 8px 15px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid #98979732;
+    background-color: #171717;
+    color: rgb(229, 229, 229);
+}
+
+
 .input-2 {
     display: block;
     font-size: 14px;
