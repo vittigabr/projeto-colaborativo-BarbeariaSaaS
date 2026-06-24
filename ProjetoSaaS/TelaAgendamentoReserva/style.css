@@ -1,3 +1,7 @@
+body {
+    background-image: url(../imagens/tela-agenda.png);
+}
+
 .botao-voltar {
     display: flex;
     align-items: center;
@@ -148,7 +152,7 @@
 }
 
 main {
-    margin-top: 160px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
