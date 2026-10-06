@@ -241,14 +241,16 @@ strong {
 .secao-selecao, .secao-selecao2{
     display: flex;
     justify-content: center;
-    margin-bottom: -20px;
+    margin-bottom: -5px;
+    padding-top: 40px;
 }
 
 .bloco-selecao{
     background-color: #000000;
     width: 250px;
     height: 260px;
-    border: 1px solid #a76905af;
+    border:1px solid #a76905;
+    /* border: 1px solid #a76905af; */
     border-radius: 20px;
     flex-direction: column;
     display: flex;
@@ -256,6 +258,13 @@ strong {
     justify-content: center;
     text-align: center;
     margin: 20px;
+    transition: 0.3s;
+}
+
+.bloco-selecao:hover{
+    transform:translateY(-5px);
+    border-color:#ff9d00;
+    box-shadow:0 15px 40px rgba(255,157,0,0.15);
 }
 
 .img-perfil{
@@ -264,7 +273,13 @@ strong {
     border: 1px solid #a76905;
     border-radius: 50%;
     padding: 15px;
+    transition: 0.3s;
 }
+
+.img-perfil:hover{
+    border-color:#ff9d00
+}
+
 
 .nome-funcionario{
     color: #ffffff;
