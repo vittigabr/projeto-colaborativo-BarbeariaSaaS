@@ -78,6 +78,7 @@ main {
 
 .senha {
     display: flex;
+
 }
 
 .senha img {
@@ -100,6 +101,27 @@ main {
     background-color: #171717;
     color: rgb(229, 229, 229);
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-3{
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    width: 85%;
+    height: 50px;
+    margin: 8px 15px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid #98979732;
+    background-color: #171717;
+    color: rgb(229, 229, 229);
+}
+
 
 .input-2 {
     display: block;
@@ -140,6 +162,13 @@ main {
 .confirmar-termos strong:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+#alerta{
+    color: #ce0c0c;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Instrument Sans', sans-serif;
 }
 
 .botao-entrar {
@@ -218,4 +247,26 @@ main {
 
 .entrar a:hover {
     text-decoration: underline;
+}
+
+.senha {
+    position: relative;
+    width: 415px;
+}
+
+.senha input {
+    width: 100%;
+    padding: 20x;
+    padding-right: 40px;
+}
+
+.senha span {
+    position:absolute;
+    padding: 20px; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #9ca3af;
+    cursor: pointer;
 }

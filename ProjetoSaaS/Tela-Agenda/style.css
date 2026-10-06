@@ -5,115 +5,258 @@
 }
 
 body {
-    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #000000 45%, #5f5f5f 100%);
+    background-image: url("../imagens/tela-agenda.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
 }
 
-header {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    display: flex;
-    align-items: center;
-    padding: 10px;
+
+header{
+    width:100%;
+    padding:10px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+    z-index:1000;
 }
 
-.nav-img-logo {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 2%;
+.logo{
+    width:80px;
+    border-radius:50%;
 }
 
-.div-img-profile {
+.botao-voltar {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 5%;
-    gap: 30px;
-}
-
-.img-logo {
-    width: 70px;
-    margin-left: 2%;
-}
-
-.div-profile {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    gap: 4px;
-    text-decoration: none;
-    color: #000;
-}
-
-.img-profile {
-    width: 55px;
-}
-
-.h4-profile {
-    color: #D9D9D9;
-    background-color: #000;
-    font-size: 23px;
-    border: 2px solid #000;
+    margin-right: 60px;
+    border: 1px solid transparent;
+    padding: 1px 14px 16px 16px;
     border-radius: 12px;
-    padding: 10px;
+    transition: 0.2s;
 }
 
-.h4-profile:hover{
-    color:#A9A9A9;
-    background-image: #333333;
-    cursor: pointer;
+.botao-voltar:hover {
+    border: 1px solid #3a3a3a;
+    background-color: #3a3a3a;
 }
 
-
-.p-profile {
-    font-size: 20px;
-    font-weight: bold;
+.botao-voltar img {
+    position: relative;
+    right: 2px;
+    top: 5px;
+    width: 24px;
 }
 
-.div-agendamento {
+.botao-voltar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    top: 6px;
+}
+
+.HeadCont{
     display: flex;
     align-items: center;
-    text-decoration: none;
+    gap: 20px;
+    position: relative;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+    outline: none;
 }
+
+.HeadCont:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.HeadCont img{
+    width: 30px;
+    height: 30px;
+}
+
+.HeadCont .nome {
+    color: white;
+    font-size: 15px;
+    font-family: "Instrument Sans",sans-serif;
+}
+
+.HeadCont .email-nome {
+    color: #989797;
+    font-size: 13px;
+    font-family: "Instrument Sans",sans-serif;
+}
+
+/* Dropdown perfil */
+.dropdown-perfil {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: #1f1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    min-width: 210px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.HeadCont:focus .dropdown-perfil,
+.HeadCont:focus-within .dropdown-perfil {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.drop-nome {
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+.drop-email {
+    color: #989797 !important;
+    font-size: 12px !important;
+    margin-top: 2px !important;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+    transition: 0.2s;
+}
+
+.dropdown-item img {
+    width: 18px;
+    height: 18px;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+}
+
+.dropdown-item.sair {
+    color: #ffffff;
+}
+
+.dropdown-item.sair:hover {
+    background: rgba(240, 100, 100, 0.08);
+    color: #ff8a8a;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #3a3a3a;
+    margin: 2px 0;
+}
+
+.nome {
+    position: relative;
+    top: 1px;
+}
+
+.email-nome {
+    position: relative;
+    bottom: -4px;
+}
+
 
 
 .conteudo {
-    width: 1120px;
-    max-width: 90%;
-    margin: 70px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin: 135px;
+    
 }
 
 .cartao {
-    width: 100%;
-    height: 125px;
+    max-width: 65%;
+    height: 130px;
     padding: 0 30px 0 18px;
-    margin-bottom: 55px;
-    background-color: #f3f3f3;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: #161616;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
+    border: 1px solid #7d5f23;
+}
+
+.cartao-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.cartao-1 .tesoura {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border: 1px solid #b88a2f;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.data {
+    display: flex;
+    gap: 40px;
+}
+
+.data img {
+    width: 20px;
+    height: 20px;
+}
+
+.data-1 {
+    display: flex;
+}
+
+.data-1 img{
+    position: relative;
+    left: -3px;
+    bottom: 1px;
 }
 
 .cartao-cinza {
-    background: linear-gradient(to right, #979797, #b0b0b0);
+    background-color: #9898985f;
 }
 
 .texto-cartao h1 {
-    font-size: 24px;
-    font-weight: normal;
-    color: #111111;
-    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .texto-cartao p {
-    font-size: 22px;
-    color: #111111;
+    font-size: 18px;
+    color: #989797;
     margin-bottom: 4px;
 }
 
 .texto-cinza h1,
 .texto-cinza p {
-    color: #444444;
+    color: #989898;
 }
 
 .botao {

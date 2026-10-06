@@ -1,149 +1,256 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    background-image: url(../imagens/tela-undo-confirma;áo.png);
 }
 
-html, body {
-    min-height: 100vh;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000 55%, #616161 100%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-header {
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    display: flex;
-    align-items: center;
-    padding: 8px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.nav-img-logo {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 2%;
-}
-
-.div-img-profile {
+.botao-voltar {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 5%;
-    gap: 30px;
+    margin-right: 60px;
+    border: 1px solid transparent;
+    padding: 1px 14px 16px 16px;
+    border-radius: 12px;
+    transition: 0.2s;
 }
 
-.img-logo {
-    width: 70px;
-    border-radius: 40px;
-    margin-left: 1%;
+.botao-voltar:hover {
+    border: 1px solid #3a3a3a;
+    background-color: #3a3a3a;
 }
 
-.div-profile {
+.botao-voltar img {
+    position: relative;
+    right: 2px;
+    top: 5px;
+    width: 24px;
+}
+
+.botao-voltar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    top: 6px;
+}
+
+.HeadCont{
     display: flex;
     align-items: center;
-    margin-left: 40px;
-    gap: 4px;
-    text-decoration: none;
-    color: #000;
-}
-
-.img-profile {
-    width: 55px;
-}
-
-.h4-profile {
-    color: #D9D9D9;
-    font-family: "Geologica", sans-serif;
-    font-weight: 100px;
-    text-decoration: none;
-    border-radius: 30px;
-    padding: 15px;
-    background-color: #000;
-    font-size: 20px;
-}
-
-.h4-profile:hover{
-    color:#A9A9A9;
-    background-image: #333333;
+    gap: 20px;
+    position: relative;
     cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+    outline: none;
 }
 
-.p-profile {
-    font-size: 19px;
-    font-weight: bold;
+.HeadCont:hover {
+    background: rgba(255, 255, 255, 0.07);
 }
 
-.div-agendamento {
+.HeadCont img{
+    width: 30px;
+    height: 30px;
+}
+
+.HeadCont .nome {
+    color: white;
+    font-size: 15px;
+    font-family: "Instrument Sans",sans-serif;
+}
+
+.HeadCont .email-nome {
+    color: #989797;
+    font-size: 13px;
+    font-family: "Instrument Sans",sans-serif;
+}
+
+/* Dropdown perfil */
+.dropdown-perfil {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: #1f1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    min-width: 210px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.HeadCont:focus .dropdown-perfil,
+.HeadCont:focus-within .dropdown-perfil {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.drop-nome {
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+.drop-email {
+    color: #989797 !important;
+    font-size: 12px !important;
+    margin-top: 2px !important;
+}
+
+.dropdown-item {
     display: flex;
     align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+    transition: 0.2s;
+}
+
+.dropdown-item img {
+    width: 18px;
+    height: 18px;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+}
+
+.dropdown-item.sair {
+    color: #ffffff;
+}
+
+.dropdown-item.sair:hover {
+    background: rgba(240, 100, 100, 0.08);
+    color: #ff8a8a;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #3a3a3a;
+    margin: 2px 0;
+}
+
+.nome {
+    position: relative;
+    top: -4px;
+}
+
+.email-nome {
+    position: relative;
+    top: -4px;
 }
 
 /* Tela Body */
 
+body {
+    margin-top: 140px;
+}
+
+/* CARDS DE SERVIÇO */
+
 section{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    padding: 0px 30px;
-    gap: 60px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+    padding: 0px 80px 40px;
+    margin: auto;
+    width: 1600px;
 }
 
-main {
-    background-color: #D9D9D9;
-    display: flex;
-    width: 280px;
-    height: 220px;
-    border-radius: 12px;
+.main-1,
+.main-2,
+.main-3{
+    width: 90%;
+    height:230px;
+    background:rgba(15,15,15,0.95);
+    border:1px solid #a76905;
+    border-radius:18px;
+    padding:30px;
+    transition:0.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
-p {
-    font-size: 20px;
-    padding: 6px;
-    font-family: "Geologica", sans-serif;
-}
-
-.div-main-1, .div-main-2, .div-main-3 {
-    padding-top: 15px;
-    padding-left: 20px;
-}
-
-.paragrafo-main {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.p-main-1, .p-main-2, .p-main-3 {
-    font-weight: 600;
-}
-
-.div-button {
-    display: flex;
-    justify-content: center;
-    padding-left: 8%;
-    margin-top: 12px;
+.main-1:hover,
+.main-2:hover,
+.main-3:hover{
+    transform:translateY(-5px);
+    border-color:#ff9d00;
+    box-shadow:0 15px 40px rgba(255,157,0,0.15);
 }
 
 
-.Agendar {
-    color: white;
-    text-decoration: none;
-    background-image: linear-gradient(to left, #a76905, #ff9d00, #a76905);
-    border: #ff9d00;
-    color: white;
-    padding: 8px 29px;
-    border-radius: 6px;
+.paragrafo-main{
+    color:#ff9d00;
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:15px;
 }
+
+ .oii {
+    width: 20px;
+}
+
+.p-main-1,
+.p-main-2,
+.p-main-3{
+    color:#d9d9d9;
+    font-size:18px;
+    font-weight:500;
+    margin:8px 0;
+}
+
+
+.div-button{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+
+.Agendar{
+    width:180px;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+    background:linear-gradient(90deg,#a76905,#ff9d00);
+    padding:14px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
 
 .Agendar:hover{
-    color: #ff9d00;
-    background-image: linear-gradient(to left, #000, #333333, #000) ;
-    cursor: pointer;
-} 
+    background:linear-gradient(90deg,#000,#333);
+    color:#ff9d00;
+}
+
+
+@media(max-width:1000px){
+
+    section{
+        grid-template-columns:repeat(2,1fr);
+        padding:120px 30px;
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    section{
+        grid-template-columns:1fr;
+    }
+
+}
