@@ -55,6 +55,7 @@ header{
 
 .menu a:hover{
     color:#ff9d00;
+    transform:translateY(-2px);
 }
 
 .signIn{
@@ -66,13 +67,14 @@ header{
 .opcaoLogin{
     color:white;
     text-decoration:none;
-    padding:12px 24px;
+    padding:12px 20px;
     border-radius:30px;
     transition:0.3s;
 }
 
 .opcaoLogin:hover{
     border:1px solid white;
+    transform:translateY(-2px);
 }
 
 .opcaoCadastro{
@@ -87,6 +89,7 @@ header{
 .opcaoCadastro:hover{
     background:#ff9d00;
     color:black;
+    transform:translateY(-2px);
 }
 
 .hero{
