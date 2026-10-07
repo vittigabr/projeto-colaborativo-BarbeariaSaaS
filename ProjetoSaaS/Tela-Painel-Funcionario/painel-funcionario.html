@@ -1,59 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painel do Funcionário</title>
-<link rel="stylesheet" href="painel-funcionario.css">
-</head>
-<body>
-<aside class="sidebar">
-  <div class="logo">BARBEARIA<span>.</span></div>
-  <nav>
-    <button class="nav-btn active" data-section="inicio">Início</button>
-    <button class="nav-btn" data-section="agenda">Minha agenda</button>
-    <button class="nav-btn" data-section="horarios">Meus horários</button>
-  </nav>
-  <button class="sair" id="btnSair">Sair</button>
-</aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel do Funcionário</title>
+    <link rel="stylesheet" href="painel-funcionario.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo">BARBEARIA<span>.</span></div>
+      <nav>
+        <button class="nav-btn active" data-section="inicio">Início</button>
+        <button class="nav-btn" data-section="agenda">Minha agenda</button>
+        <button class="nav-btn" data-section="horarios">Meus horários</button>
+      </nav>
+      <button class="sair" id="btnSair">Sair</button>
+    </aside>
 
-<main class="main">
-<header class="topbar">
-  <div><p class="eyebrow">PAINEL DO FUNCIONÁRIO</p><h1>Olá, Carlos!</h1></div>
-  <div class="perfil"><div class="avatar">CS</div><div><strong>Carlos Souza</strong><small>Barbeiro</small></div></div>
-</header>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PAINEL DO FUNCIONÁRIO</p>
+          <h1>Olá, Carlos!</h1>
+        </div>
+        <div class="perfil">
+          <div class="avatar">CS</div>
+          <div><strong>Carlos Souza</strong><small>Barbeiro</small></div>
+        </div>
+      </header>
 
-<section id="inicio" class="section active">
-  <div class="section-heading"><div><h2>Resumo de hoje</h2><p>Confira seus atendimentos e horários.</p></div><span class="date-badge" id="dataHoje"></span></div>
-  <div class="cards">
-    <article class="card"><span>Atendimentos</span><strong id="totalAtendimentos">0</strong><small>agendados para hoje</small></article>
-    <article class="card"><span>Confirmados</span><strong id="totalConfirmados">0</strong><small>clientes confirmados</small></article>
-    <article class="card"><span>Pendentes</span><strong id="totalPendentes">0</strong><small>aguardando confirmação</small></article>
-  </div>
-  <div class="panel">
-    <div class="panel-title"><div><h3>Próximo atendimento</h3><p id="proximoTexto">Carregando...</p></div><span class="status" id="proximoStatus"></span></div>
-  </div>
-  <div class="panel"><div class="panel-title"><div><h3>Agenda de hoje</h3><p>Seus próximos horários.</p></div></div><div id="listaAgenda" class="agenda-list"></div></div>
-</section>
+      <section id="inicio" class="section active">
+        <div class="section-heading">
+          <div>
+            <h2>Resumo de hoje</h2>
+            <p>Confira seus atendimentos e horários.</p>
+          </div>
+          <span class="date-badge" id="dataHoje"></span>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span>Atendimentos</span><strong id="totalAtendimentos">0</strong
+            ><small>agendados para hoje</small>
+          </article>
+          <article class="card">
+            <span>Confirmados</span><strong id="totalConfirmados">0</strong
+            ><small>clientes confirmados</small>
+          </article>
+          <article class="card">
+            <span>Pendentes</span><strong id="totalPendentes">0</strong
+            ><small>aguardando confirmação</small>
+          </article>
+        </div>
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h3>Próximo atendimento</h3>
+              <p id="proximoTexto">Carregando...</p>
+            </div>
+            <span class="status" id="proximoStatus"></span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h3>Agenda de hoje</h3>
+              <p>Seus próximos horários.</p>
+            </div>
+          </div>
+          <div id="listaAgenda" class="agenda-list"></div>
+        </div>
+      </section>
 
-<section id="agenda" class="section">
-  <div class="section-heading"><div><h2>Minha agenda</h2><p>Gerencie os atendimentos marcados para você.</p></div></div>
-  <div class="panel"><div id="agendaCompleta" class="agenda-list"></div></div>
-</section>
+      <section id="agenda" class="section">
+        <div class="section-heading">
+          <div>
+            <h2>Minha agenda</h2>
+            <p>Gerencie os atendimentos marcados para você.</p>
+          </div>
+        </div>
+        <div class="panel">
+          <div id="agendaCompleta" class="agenda-list"></div>
+        </div>
+      </section>
 
-<section id="horarios" class="section">
-  <div class="section-heading"><div><h2>Meus horários</h2><p>Horários em que você está disponível para atendimento.</p></div></div>
-  <div class="schedule-grid">
-    <div><strong>Segunda</strong><span>08:00 — 18:00</span></div>
-    <div><strong>Terça</strong><span>08:00 — 18:00</span></div>
-    <div><strong>Quarta</strong><span>08:00 — 18:00</span></div>
-    <div><strong>Quinta</strong><span>10:00 — 20:00</span></div>
-    <div><strong>Sexta</strong><span>08:00 — 18:00</span></div>
-    <div><strong>Sábado</strong><span>08:00 — 14:00</span></div>
-    <div><strong>Domingo</strong><span>Folga</span></div>
-  </div>
-</section>
-</main>
-<script src="painel-funcionario.js"></script>
-</body>
+      <section id="horarios" class="section">
+        <div class="section-heading">
+          <div>
+            <h2>Meus horários</h2>
+            <p>Horários em que você está disponível para atendimento.</p>
+          </div>
+        </div>
+        <div class="schedule-grid">
+          <div><strong>Segunda</strong><span>08:00 — 18:00</span></div>
+          <div><strong>Terça</strong><span>08:00 — 18:00</span></div>
+          <div><strong>Quarta</strong><span>08:00 — 18:00</span></div>
+          <div><strong>Quinta</strong><span>10:00 — 20:00</span></div>
+          <div><strong>Sexta</strong><span>08:00 — 18:00</span></div>
+          <div><strong>Sábado</strong><span>08:00 — 14:00</span></div>
+          <div><strong>Domingo</strong><span>Folga</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="painel-funcionario.js"></script>
+  </body>
 </html>
