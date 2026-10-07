@@ -110,7 +110,4 @@ document.getElementById("dataHoje").textContent = hoje.toLocaleDateString(
   { day: "2-digit", month: "short" },
 );
 
-document.getElementById("btnSair").onclick = () =>
-  alert("Aqui você poderá redirecionar para o login.");
-
 renderizar();

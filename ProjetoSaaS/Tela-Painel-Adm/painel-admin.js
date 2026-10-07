@@ -140,9 +140,6 @@ document.getElementById("modalForm").onsubmit = (e) => {
   renderizar();
 };
 
-document.getElementById("btnSair").onclick = () =>
-  alert("Aqui você poderá redirecionar para o login.");
-
 document.getElementById("dataHoje").textContent = new Date().toLocaleDateString(
   "pt-BR",
   { day: "2-digit", month: "short" },
