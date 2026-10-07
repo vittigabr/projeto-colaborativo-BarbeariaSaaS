@@ -110,3 +110,18 @@ section{
     }
 
 }
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 900px){
+    section{grid-template-columns:repeat(2,minmax(0,1fr));padding:120px 24px 60px;gap:20px;}
+    .main-3{width:100%;}
+}
+@media (max-width: 600px){
+    section{grid-template-columns:1fr;padding:105px 16px 45px;gap:16px;}
+    .main-3{padding:105px 16px 45px;}
+    .main-3 h1{font-size:30px;}
+    .Agendar{width:100%;max-width:220px;}
+}

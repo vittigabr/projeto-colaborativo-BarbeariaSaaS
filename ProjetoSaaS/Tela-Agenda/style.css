@@ -150,3 +150,25 @@ header{
         margin-top: 20px;
     }
 }
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 900px){
+    .conteudo{margin:120px 20px 40px;}
+    .cartao{max-width:100%;width:100%;}
+    .cartao-1{gap:14px;}
+    .data{gap:18px;flex-wrap:wrap;}
+}
+@media (max-width: 600px){
+    .conteudo{margin:95px 12px 30px;}
+    .cartao{max-width:100%;width:100%;padding:18px;display:flex;flex-direction:column;align-items:stretch;gap:15px;}
+    .cartao-1{align-items:center;}
+    .cartao-1 .tesoura{width:45px;height:45px;}
+    .texto-cartao h1{font-size:19px;}
+    .texto-cartao p{font-size:15px;}
+    .data{gap:10px;flex-direction:column;}
+    .data-1{font-size:14px;}
+    .botao{width:100%;height:48px;font-size:17px;margin-top:5px;}
+}

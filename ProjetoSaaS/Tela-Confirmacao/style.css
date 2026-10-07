@@ -135,3 +135,20 @@ main{
         display:none;
     }
 }
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 600px){
+    header{height:70px;padding-left:18px;}
+    main{min-height:calc(100vh - 70px);padding:85px 14px 30px;justify-content:flex-start;}
+    .secao-fundo{width:100%;min-height:auto;padding:24px 18px;border-radius:14px;}
+    .informacoes{gap:22px;}
+    .item-info{gap:12px;}
+    .item-info img{width:44px;height:44px;padding:9px;}
+    .titulo{font-size:13px;}
+    .descricao{font-size:15px;word-break:break-word;}
+    .div-botoes{flex-direction:column;gap:12px;margin-top:28px;width:100%;}
+    .div-botoes a{width:100%;font-size:16px;}
+}
