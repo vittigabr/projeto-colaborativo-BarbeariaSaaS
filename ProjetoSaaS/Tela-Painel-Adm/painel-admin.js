@@ -28,6 +28,7 @@ const agendamentos = [
     status: "Confirmado",
   },
 ];
+
 const funcionarios = [
   { id: 1, nome: "Carlos Souza", email: "carlos@email.com", servico: "Corte" },
   { id: 2, nome: "João Lima", email: "joao@email.com", servico: "Barba" },
@@ -38,6 +39,7 @@ const funcionarios = [
     servico: "Corte + Barba",
   },
 ];
+
 const servicos = [
   { id: 1, nome: "Corte masculino", preco: 35, duracao: "30 min" },
   { id: 2, nome: "Barba", preco: 25, duracao: "20 min" },
@@ -47,6 +49,7 @@ const servicos = [
 function agendaHTML(x) {
   return `<div class="agendamento"><span class="hora">${x.horario}</span><div class="cliente"><strong>${x.cliente}</strong><span>${x.servico} · ${x.funcionario}</span></div><span class="status">${x.status}</span></div>`;
 }
+
 function renderizar() {
   document.getElementById("resumoAgenda").innerHTML = agendamentos
     .map(agendaHTML)
@@ -76,6 +79,7 @@ function renderizar() {
     agendamentos.length;
   document.getElementById("totalServicos").textContent = servicos.length;
 }
+
 document.querySelectorAll(".nav-btn").forEach(
   (btn) =>
     (btn.onclick = () => {
@@ -89,8 +93,10 @@ document.querySelectorAll(".nav-btn").forEach(
       document.getElementById(btn.dataset.section).classList.add("active");
     }),
 );
+
 const modal = document.getElementById("modal"),
   tipo = { value: "" };
+
 function abrir(t) {
   tipo.value = t;
   modal.classList.add("active");
@@ -104,6 +110,7 @@ function abrir(t) {
   document.getElementById("campoExtra").value = "";
   document.getElementById("campoNome").focus();
 }
+
 document.getElementById("novoFuncionario").onclick = () => abrir("funcionario");
 
 document.getElementById("novoServico").onclick = () => abrir("servico");
