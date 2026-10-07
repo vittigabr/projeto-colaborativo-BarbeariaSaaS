@@ -46,7 +46,7 @@ datas.forEach((botao, index) => {
 let d = 0
 let m = 1
 let i = 0
-for(let c = 0; c<=datas.length; c++){
+for(let c = 0; c < datas.length; c++){
     if(month%2==0 || mes=='Ago' && dia+d<32){
         datas[c].setAttribute('value', `${dia+d}/${mes}`)
     }
