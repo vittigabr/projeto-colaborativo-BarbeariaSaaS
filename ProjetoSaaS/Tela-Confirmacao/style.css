@@ -108,19 +108,9 @@ main{
     font-weight:700;
 }
 
-.botao-voltar{
-    background:#000;
-    color:white;
-    border:1px solid #333;
-}
-
 .botao-agendar{
     background:linear-gradient(90deg,#a76905,#ff9d00);
     color:white;
-}
-
-.botao-voltar:hover{
-    border-color:#ff9d00;
 }
 
 .botao-agendar:hover{

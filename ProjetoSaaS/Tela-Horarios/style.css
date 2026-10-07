@@ -2,37 +2,6 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 1));
 }
 
-.botao-voltar {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 60px;
-    border: 1px solid transparent;
-    padding: 1px 14px 16px 16px;
-    border-radius: 12px;
-    transition: 0.2s;
-}
-
-.botao-voltar:hover {
-    border: 1px solid #3a3a3a;
-    background-color: #3a3a3a;
-}
-
-.botao-voltar img {
-    position: relative;
-    right: 2px;
-    top: 5px;
-    width: 24px;
-}
-
-.botao-voltar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    position: relative;
-    top: 6px;
-}
-
 /* Tela Horários */
 .telaServico{
     margin-top: 100px;
