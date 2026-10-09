@@ -1,0 +1,127 @@
+body{
+    background-image: url(../imagens/tela-undo-confirma;áo.png);
+}
+
+.nome {
+    position: relative;
+    top: -4px;
+}
+
+.email-nome {
+    position: relative;
+    top: -4px;
+}
+
+/* Tela Body */
+
+body {
+    margin-top: 140px;
+}
+
+/* CARDS DE SERVIÇO */
+
+section{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+    padding: 0px 80px 40px;
+    margin: auto;
+    width: 1600px;
+}
+
+.main-1,
+.main-2,
+.main-3{
+    width: 90%;
+    height:230px;
+    background:rgba(15,15,15,0.95);
+    border:1px solid #a76905;
+    border-radius:18px;
+    padding:30px;
+    transition:0.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.main-1:hover,
+.main-2:hover,
+.main-3:hover{
+    transform:translateY(-5px);
+    border-color:#ff9d00;
+    box-shadow:0 15px 40px rgba(255,157,0,0.15);
+}
+
+.paragrafo-main{
+    color:#ff9d00;
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+ .oii {
+    width: 20px;
+}
+
+.p-main-1,
+.p-main-2,
+.p-main-3{
+    color:#d9d9d9;
+    font-size:18px;
+    font-weight:500;
+    margin:8px 0;
+}
+
+.div-button{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.Agendar{
+    width:180px;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+    background:linear-gradient(90deg,#a76905,#ff9d00);
+    padding:14px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.Agendar:hover{
+    background:linear-gradient(90deg,#000,#333);
+    color:#ff9d00;
+}
+
+@media(max-width:1000px){
+
+    section{
+        grid-template-columns:repeat(2,1fr);
+        padding:120px 30px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    section{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 900px){
+    section{grid-template-columns:repeat(2,minmax(0,1fr));padding:120px 24px 60px;gap:20px;}
+    .main-3{width:100%;}
+}
+@media (max-width: 600px){
+    section{grid-template-columns:1fr;padding:105px 16px 45px;gap:16px;}
+    .main-3{padding:105px 16px 45px;}
+    .main-3 h1{font-size:30px;}
+    .Agendar{width:100%;max-width:220px;}
+}

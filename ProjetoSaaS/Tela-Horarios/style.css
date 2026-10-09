@@ -2,37 +2,6 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 1));
 }
 
-.botao-voltar {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 60px;
-    border: 1px solid transparent;
-    padding: 1px 14px 16px 16px;
-    border-radius: 12px;
-    transition: 0.2s;
-}
-
-.botao-voltar:hover {
-    border: 1px solid #3a3a3a;
-    background-color: #3a3a3a;
-}
-
-.botao-voltar img {
-    position: relative;
-    right: 2px;
-    top: 5px;
-    width: 24px;
-}
-
-.botao-voltar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    position: relative;
-    top: 6px;
-}
-
 /* Tela Horários */
 .telaServico{
     margin-top: 100px;
@@ -157,4 +126,29 @@ input:hover{
     background-color: #ccc;
     color: #000;
     border-color: #ccc;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 900px){
+    .telaServico{width:min(500px,calc(100% - 40px));margin:100px auto 0;height:auto;min-height:180px;padding:25px 20px;}
+    .containerServico{width:100%;max-width:400px;font-size:20px;}
+    .semana{gap:10px;flex-wrap:wrap;}
+    .bloco-manha,.bloco-tarde,.bloco-noite{margin-left:0;padding:0 20px;}
+    .bloco-manha ul,.bloco-tarde ul,.bloco-noite ul{gap:10px;flex-wrap:wrap;}
+    .linha_horario{padding:16px 10px;overflow-x:auto;}
+    .carrossel{width:100%;}
+}
+@media (max-width: 600px){
+    .telaServico{width:calc(100% - 24px);margin-top:85px;padding:20px 12px;}
+    .containerServico{font-size:17px;}
+    .bloco-horario h2{font-size:20px;text-align:center;}
+    .bloco-manha ul,.bloco-tarde ul,.bloco-noite ul{justify-content:center;gap:8px;margin-bottom:25px;}
+    .bloco-horario a,.dia{padding:8px;font-size:15px;}
+    .linha_horario{padding:12px 4px;}
+    #bntA,#bntP{font-size:16px;padding:8px;}
+    .semana{gap:7px;}
+    input{font-size:15px;}
 }

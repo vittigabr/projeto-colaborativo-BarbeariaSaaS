@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>TCC BARBER</title>
+    <link rel="stylesheet" href="../styleGeral.css">
+    <link rel="stylesheet" href="painel-admin.css" />
+    <link rel="shortcut icon" href="../imagens/logos/icon-barber.png" type="image/x-icon">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <img class="logo" src="../imagens/logos/ChatGPT Image 2 de abr. de 2026, 13_29_20 2@2x.png" alt="logo">
+      <nav>
+        <button class="nav-btn active" data-section="dashboard">
+          Dashboard
+        </button>
+        <button class="nav-btn" data-section="agenda">Agendamentos</button>
+        <button class="nav-btn" data-section="funcionarios">
+          Funcionários
+        </button>
+        <button class="nav-btn" data-section="servicos">Serviços</button>
+      </nav>
+      <a href="../Tela-Home/home.html" class="sair" id="btnSair">Sair</a>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PAINEL ADMINISTRATIVO</p>
+          <h1>Visão geral</h1>
+        </div>
+        <div class="perfil">
+          <div class="avatar">AD</div>
+          <div><strong>Administrador</strong><small>Proprietário</small></div>
+        </div>
+      </header>
+
+      <section id="dashboard" class="section active">
+        <div class="section-heading">
+          <div>
+            <h2>Resumo do estabelecimento</h2>
+            <p>Acompanhe o funcionamento da barbearia.</p>
+          </div>
+          <span class="date-badge" id="dataHoje"></span>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span>Agendamentos hoje</span
+            ><strong id="totalAgendamentos">0</strong
+            ><small>atendimentos</small>
+          </article>
+          <article class="card">
+            <span>Funcionários</span><strong>8</strong
+            ><small>profissionais ativos</small>
+          </article>
+          <article class="card">
+            <span>Serviços</span><strong id="totalServicos">0</strong
+            ><small>serviços cadastrados</small>
+          </article>
+        </div>
+        <div class="grid-two">
+          <div class="panel">
+            <div class="panel-title">
+              <div>
+                <h3>Agenda de hoje</h3>
+                <p>Todos os profissionais.</p>
+              </div>
+            </div>
+            <div id="resumoAgenda" class="agenda-list"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-title">
+              <div>
+                <h3>Funcionários</h3>
+                <p>Serviço principal.</p>
+              </div>
+            </div>
+            <div id="resumoFuncionarios" class="employee-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agenda" class="section">
+        <div class="section-heading">
+          <div>
+            <h2>Agendamentos</h2>
+            <p>Atendimentos de todos os funcionários.</p>
+          </div>
+        </div>
+        <div class="panel">
+          <div id="agendaCompleta" class="agenda-list"></div>
+        </div>
+      </section>
+
+      <section id="funcionarios" class="section">
+        <div class="section-heading">
+          <div>
+            <h2>Funcionários</h2>
+            <p>Defina o serviço e o horário de cada profissional.</p>
+          </div>
+          <button class="primary" id="novoFuncionario">
+            + Novo funcionário
+          </button>
+        </div>
+        <div class="panel">
+          <div id="funcionariosLista" class="table-list"></div>
+        </div>
+      </section>
+
+      <section id="servicos" class="section">
+        <div class="section-heading">
+          <div>
+            <h2>Serviços</h2>
+            <p>Gerencie os serviços oferecidos.</p>
+          </div>
+          <button class="primary" id="novoServico">+ Novo serviço</button>
+        </div>
+        <div class="panel">
+          <div id="servicosLista" class="service-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <button class="fechar" id="fecharModal">×</button>
+        <h3 id="modalTitulo"></h3>
+        <form id="modalForm">
+          <label>Nome<input id="campoNome" required /></label>
+          <label id="campoExtraLabel"
+            >Informação<input id="campoExtra" required
+          /></label>
+          <button class="primary" type="submit">Salvar</button>
+        </form>
+      </div>
+    </div>
+    <script src="painel-admin.js"></script>
+  </body>
+</html>
