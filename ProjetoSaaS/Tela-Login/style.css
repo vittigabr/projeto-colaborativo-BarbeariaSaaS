@@ -232,3 +232,30 @@ main {
     color: #9ca3af;
     cursor: pointer;
 }
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 600px){
+    body{min-height:100vh;background-position:center;}
+    header{padding:20px 20px;}
+    header img{width:58px;height:58px;}
+    main{width:calc(100% - 28px);height:auto;min-height:520px;margin:20px auto 25px;padding:0 14px 20px;}
+    .bemvindo h1{font-size:26px;margin-top:32px;}
+    .bemvindo p{font-size:14px;margin-bottom:24px;}
+    .formulario{width:100%;}
+    .formulario img{left:26px;}
+    .input-1,.input-2{width:100%;margin:8px 0;padding-left:44px;}
+    .senha{width:100%;}
+    .senha img{left:24px;}
+    .senha span{right:2px;}
+    .esqueci-senha{margin-right:2px;}
+    .botao-entrar a{width:100%;padding:15px 10px;}
+    .google{width:100%;}
+}
+
+@media (min-width:601px) and (max-width:900px){
+    main{max-width:440px;width:calc(100% - 40px);}
+    .botao-entrar a{padding-left:80px;padding-right:80px;}
+}
